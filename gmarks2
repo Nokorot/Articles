@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cat "$1"  | awk -F "\t" '{print "BookmarkBegin"} 
+				{print "BookmarkTitle: " $3}
+				{print "BookmarkPageNumber: " $2+1}
+				{print "BookmarkLevel: " $1}'
