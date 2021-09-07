@@ -1,0 +1,59 @@
+\documentclass[a4paper,11pt,english]{article}
+\usepackage{.style}
+
+%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\textbf{The topological Künneth theorem in homology}}
+\author{Tor Gjone (s1706798)}
+
+%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%
+\input{defs}
+
+%%%%%%%% Content %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\mmaketitle
+
+\section{Construction (Exterior pairing)}
+Let $R$ be a commutative ring and $X$ and $Y$ simplical sets. The \wddef{homological exterior pairing}
+\begin{align*}
+& \times : && H_p(X; R) \otimes_R H_q(Y; R) = H_p(C_*(X; R)) \otimes_R H_q(C_*(Y; R)) \\ 
+& \xrightarrow[{[x]\otimes[y] \mapsto [x\otimes y]}]{\Phi}  && H_{p+q}(C_*(X;R)\otimes_R C_*(Y;R))  \\
+& \xrightarrow{\qq{H_{p+q}(\nabla)}} && H_{p+q}(C_*(X\times Y; R)) = H_{p+q}(X\times Y;R).
+\end{align*} 
+
+For two spaces $A$ and $B$, the \wddef{external homology pairing} is the composite
+
+\begin{align*}
+& \times : 
+&& H_p(A; R) \otimes_R H_q(B; R) = H_{p} (\rho(A); R) \otimes_R H_q(\rho(B);R) \\ 
+& \xrightarrow{\qq{\qq\times}}  
+&&  H_{p+q}(\rho(A)\times\rho(B); R)  \\
+& \xrightarrow{H_{p+q}(c^{-1};R)}
+&& H_{p+q}(\rho(A\times B); R) = H_{p+q}(A\times B;R).
+\end{align*} 
+
+where $c = (\rho(p_1), \rho(p_2)): \rho(A \times B) \xrightarrow[\cong] \rho(A)\times \rho(B)$ is the canonical isomorphism of simplical sets, where $p_1 : A\times B \to A$ and $p_2 : A\times B \to B$ are the canonical projections.
+
+\begin{them}
+Let $R$ be a field and $X$ and $Y$ be spaces or simpical spaces. Then the exterioir homology pairing provides a natural isomorphism of $R$-vector spaces
+\[ \bigoplus_{p+q=n} H_p(X;R)\otimes_R H_q(Y;R) \to H_n(X\times Y; R) \]
+\end{them}
+
+\begin{proof}
+case of siplical sets: the map in question is the composite of two isomorphisms: 
+\[ \bigoplus_{p+q=n} H_p(C_*(X; R)) \otimes_R H_q(C_*(Y; R)) \xrightarrow{\Phi} 
+H_n(C_*(X;R)\otimes_R C_*(Y;R)) \xrightarrow{H_n(\nabla)}
+H_n(C_*(X\times Y; R)), \]
+where the first map is an isomorphism by the algebraic Künneth theorem and the second is an isomorphism by the Elenberg-Zilber theorem.
+\end{proof}
+
+Simular arguments show:
+
+\begin{them}
+Let $X$ and $Y$ be spaces or siplical sets. THen the singular exterios homology pairing participate in a natural short exact sequence of abelian groups: 
+\[ 0 \to \bigoplus_{p+q=n} H_p(X;\Z) \otimes H_q(Y;\Z) \xrightarrow{\times} H_n(X\times Y; \Z) \to \bigoplus_{p+q=n} \Tor(H_p(X,\Z), H_q(Y,\Z)) \to 0 \]
+
+The sequence splits (but the spliting cannot be chosen naturaly).
+\end{them}
+
+
+\end{document}

@@ -1,0 +1,71 @@
+\documentclass[a4paper,11pt,english]{article}
+\usepackage{.style}
+
+%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\textbf{Topology II - Cohomology}}
+\author{Tor Gjone (s1706798)}
+
+%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%
+\input{defs}
+
+%%%%%%%% Content %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\mmaketitle
+
+
+
+% NOT Complete
+
+
+\def \map {\text{map}}
+\def \mapcts {\map^{\text{cpt}}}
+
+Reminder about homology:
+\[ \Top \xrightarrow[\text{singular complex}]{\rho} (\text{simpicial sets}) 
+\xrightarrow[\text{linearization}^{C(-,A)}]{} (\text{chain complex}) 
+\xrightarrow[n-\text{th homology group}]{}  \Ab. \]
+
+\begin{itemize}
+\item For a space $X$, the \underline{singular complex} $\rho(X)$ is the
+simplicial set with 
+\[ \rho(X)_n = \mapcts(\nabla^n, X) \]
+\[ \nabla^n = \text{topological } n-\text{simplex} = \{ (x_0, ..., x_n) \in
+\R^{n+1} \q: x_n \ge 0, x_0 + ... + x_n = 1 \} \]
+\item For a simplicial set $Y$ and an abelian group, the \wddef{linearization}
+is the chain complex $C(Y; A)$ with 
+\[ C_(Y;a) = A[Y_n] \quad A-\text{linarization of} Y_n \qquad ( C_n(Y;A) = 0
+\quad\text{for } n<0) \]
+\item For a chain complex $C$ and $n \in \Z$, the $n$-th homology group
+$H_n(C)$ is 
+\[ \frac{\ker(d_n : C_n \to C_{n-1})}{\im(d_{n+1}) : C_{n+1} \to C_n}  \]
+\end{itemize}
+
+
+\subsection{Variation : Cohomology}
+
+
+\begin{defn}
+A \underline{cochain coplex} $C$ consists of abelian groups $C^n$ for $n\in\Z$
+and homomorphisms $d^n : C^n \to C^{n+1}$ such that 
+\[ d^{n+1} \circ d^n = 0 : C^n \to C^{n+2}.  \]
+A morphism $f : C \to D$ of cochain complexes (cochain map) consists of
+homomorphisms $f^n: C^n \to D^n$ such that $d_D^n \circ f^n = f^{n+1} \circ
+d_C^n$ 
+
+\TODO{Diagram}
+
+The $n$-th \underline{cohomology group} of a cochain complex $C$ is
+\[ H^nC = \frac{\ker(d^n : C^n \to C^{n+1})}{\im(d^{n-1} : C^{n-1} \to C^n)} \]
+
+The main tools and properties carry over from chain complexes to cochain
+complexs, with essentially the same proofs, such as:
+
+\begin{itemize}
+\item a morphism $f: C \to D$ of cochain complexes 
+\end{itemize}
+
+\end{defn}
+
+
+
+\end{document}

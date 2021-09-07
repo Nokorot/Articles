@@ -1,0 +1,66 @@
+\usepackage[utf8]{inputenc}
+
+% Title page
+\usepackage{lipsum}
+\makeatletter \newcommand\mmaketitle{%
+\hskip -1.3em
+\begin{minipage}{\textwidth}
+ {\huge \textit\@title \par } \vskip 1em
+ {\large \@author } \hfill
+ {\large \@date}
+ \noindent\rule{\textwidth}{0.4pt}
+\end{minipage}
+\vskip 2em \par \relax
+} \makeatother
+
+% Maths packages
+\usepackage{amsfonts,amsmath,amssymb,amsthm}
+
+% Struf
+\usepackage{comment}
+
+\usepackage{xcolor,bold-extra} 
+
+\usepackage{graphicx}
+\usepackage{tikz,pgfplots}
+\pgfplotsset{compat=1.5.1}
+\usepackage{todonotes}
+
+\usepackage{mathtools}
+
+% Defining page margins
+\usepackage[a4paper, top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+% Urls and hyperlinks
+\usepackage{url,hyperref}
+\usepackage{stmaryrd}
+\hypersetup{ colorlinks = true, urlcolor   = magenta, %
+             linkcolor  = magenta, citecolor  = magenta}
+
+
+% TODO Notes
+\usepackage[framemethod=TikZ]{mdframed}
+\newcommand{\simpleHeaderBase}[1]{
+	{ \noindent \hspace{-.5cm} \Large\textbf{#1} \vspace{.2cm} \newline }
+}
+\newcommand{\coloredBoxBase}[2]{
+	\mdfsetup{
+		% Title
+		frametitle={
+			\tikz[baseline=(current bounding box.east),outer sep=0pt]
+			\node[anchor=east,rectangle,fill=#2] #1;}, 
+		% BOX
+		innertopmargin=10pt,linecolor=#2,
+		linewidth=2pt,topline=true,
+		frametitleaboveskip=\dimexpr-\ht\strutbox\relax }
+}
+
+\newcommand{\TODO}[1]{
+	%	TODO \{ #1 \}
+	%	\simpleHeaderBase{TODO}
+	\coloredEnvBoxBase{{\strut\scshape TODO}}{yellow!40}
+	\begin{mdframed}[]\relax
+		#1
+	\end{mdframed} 
+	\vspace{.5cm}
+}
