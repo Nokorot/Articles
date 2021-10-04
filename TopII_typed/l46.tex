@@ -3,10 +3,12 @@
 
 %%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{\textbf{Topology II - Cohomology}}
-\author{Tor Gjone (s1706798)}
+\author{Tor Gjone}
 
 %%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%
 \input{defs}
+
+
 
 %%%%%%%% Content %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -15,7 +17,6 @@
 
 
 % NOT Complete
-
 
 \def \map {\text{map}}
 \def \mapcts {\map^{\text{cpt}}}
@@ -45,26 +46,119 @@ $H_n(C)$ is
 
 
 \begin{defn}
-A \underline{cochain coplex} $C$ consists of abelian groups $C^n$ for $n\in\Z$
+A \wddef{cochain complex} $C$ consists of abelian groups $C^n$ for $n\in\Z$
 and homomorphisms $d^n : C^n \to C^{n+1}$ such that 
 \[ d^{n+1} \circ d^n = 0 : C^n \to C^{n+2}.  \]
 A morphism $f : C \to D$ of cochain complexes (cochain map) consists of
 homomorphisms $f^n: C^n \to D^n$ such that $d_D^n \circ f^n = f^{n+1} \circ
 d_C^n$ 
 
-\TODO{Diagram}
 
-The $n$-th \underline{cohomology group} of a cochain complex $C$ is
+
+\[ \diagSquare{f^n}{d^n}{}{f^{n+1}}{C^n}{D^n}{C^{n+1}}{D^{n+1}}   \]
+% \[ \begin{tikzpicture}[node distance=2cm]
+% \node (a) {$C^n$}; \node (b) [right of=a] {$D^n$};
+% \node (c) [below of=a] {$C^{n+1}$}a \node (d) [right of=c] {$D^{n+1}$}
+% \end{tikzpicture} \]
+
+
+The $n$-th \wddef{cohomology group} of a cochain complex $C$ is
 \[ H^nC = \frac{\ker(d^n : C^n \to C^{n+1})}{\im(d^{n-1} : C^{n-1} \to C^n)} \]
 
+A \wddef{cochain homotopy} between two morphisms $f,g: C \to D$ of cocain
+complexes consists of homomorphisms 
+\[ s^n: C^n \to D^{n-1} \qq{\text{such that }} d^{n-1}\circ s^n + s^{n+1} \circ d^n =f f^n - g^n  \] 
+for all $n\in\Z$.
+
 The main tools and properties carry over from chain complexes to cochain
-complexs, with essentially the same proofs, such as:
+complexes, with essentially the same proofs, such as:
 
 \begin{itemize}
-\item a morphism $f: C \to D$ of cochain complexes 
+\item a morphism $f: C \to D$ of cochain complexes induces a homomorphism $H^n f
+: H^n C \to H^n D$ for cohomology groups by
+\[ (H^n f) [x] = [f^n(x)], \quad x \in \ker(d^n : \C^n \to C^{n+1}). \]
+%
+\item cochain homotopic morphisms $f,g : C \to D$ between cochain complexes
+induces the same map in cohomology, ie. $H^n f = H^n g$.
+%
+\item every short exact sequence of cochain complexes 
+\[ 0 \xto{f} B \xto{g} C \to 0 \]
+gives rise to a long exact sequence of cohomology groups:
+\[ \dots \to H^n A \xto{H^n f} H^n B \xto{H^n g} H^n C \xto{\partial} H^{n+1}(A)
+\to \dots \]
+where the connecting homomorphism $\partial$ is defined as follows: given $x\in
+C^n$ with $d^n(x) = 0$, choose $\tilde{x} \in B^n$ such that $g^n(\tilde{x}) =
+x$, then 
+\[ g^{n+1} (d_B^n(\tilde{x})) = d_C^n(g^n(\tilde{x})) = d_C^n(x) = 0, \]
+so there is a unique $y\in A^{n+1}$ such that $f^{n+1}(y) =
+d_B^{n+1}(\tilde{x})$. Set 
+\[ \partial [x] = [y] \in H^{n+1}(A). \]
 \end{itemize}
 
 \end{defn}
+
+
+
+% \makeatletter
+% \newcommand\arrowlen[1]{\def\@arrowlen{ #1 }}
+% \arrowlen{1em}
+% 
+% \renewcommand{\xto}[1]{ \xrightarrow{\mathmakebox[\@arrowlen]{#1}} }
+% \renewcommand{\mapsto}{ \xmapsto{\mathmakebox[\@arrowlen]{ }} }
+% 
+% \makeatother
+
+
+\newdimen\alength 
+\alength=22pt
+
+\newenvironment{mappingD}
+{
+\let\oldxto\xto
+
+%\makeatletter
+% \def\@arrowlen{ 2em }
+
+
+\renewcommand{\xto}[1]{ \xrightarrow{\mathmakebox[\alength]{#1}} }
+\renewcommand{\mapsto}{ \xmapsto{\mathmakebox[\alength]{ \the\alength }} }
+% \makeatother
+
+\[ \arraycolsep=5pt \def\arraystretch{1.5}
+\begin{array}{ccccc} 
+}
+{ 
+\end{array} \] 
+
+\let\xto\oldxto
+\undef\oldxto
+}
+
+\alength=3em
+\begin{mappingD}
+A \otimes H_n C &\xto{f\circ g\circ h}& H_n( A\otimes C) &\xto{H^n f}& \Tor(A, H_{n-1}(C)) \\
+a\otimes [x] &\mapsto& [a\otimes x] &&
+\end{mappingD}
+
+
+\[ \begin{matrix}
+A \otimes H_n C &\xto{f\circ g}& H_n( A\otimes C) &\xto{H^n f}& \Tor(A,
+H_{n-1}(C)) \\
+a\otimes [x] &\mapsto& [a\otimes x] &&
+\end{matrix} \]
+
+\vspace{.3cm}
+
+\[ 
+\arraycolsep=5pt \def\arraystretch{1.5}
+\begin{array}{ccccc}
+A \otimes H_n C &\xto{f\circ g}& H_n( A\otimes C) &\xto{H^n f}& \Tor(A,
+H_{n-1}(C)) \\
+a\otimes [x] &\mapsto& [a\otimes x] &&
+\end{array} 
+\]
+
+
 
 
 

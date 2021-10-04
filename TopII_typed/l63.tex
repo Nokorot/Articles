@@ -1,0 +1,178 @@
+\documentclass[a4paper,11pt,english]{article}
+\usepackage{.style}
+
+%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\textbf{Topology II - Stiefel manifolds}}
+\author{Tor Gjone}
+
+%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%
+\input{defs}
+
+\newcommand{\textif}{\text{if }}
+
+
+\usepackage{tikz}
+
+\usetikzlibrary{arrows.meta}
+
+%%%%%%%% Content %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\mmaketitle
+
+% Complete
+
+Let $0 \le k \le n$. The \wddef{Stiefel manifold} is defined by 
+\begin{align}
+V_{k,n} &= \left\{
+(v_1, \dots, b_k) \in (\R^n)^k \q: \<{v_i,v_j} = \begin{cases}1 & \textif i=j \\ 0
+& \textif i\ne j \end{cases} \right\} \\
+&= \text{space of orthogonal } k\text{-frames in } \R^n 
+\end{align}
+
+$V_{k,n}$ comes with the subspace topology of $(\R^n)^k$ ; since
+$V_{k,n} \subset (S^{n-1})^4$ is a closed subset, $V_{k,n}$is compact.
+
+\begin{exmp}
+\begin{align*}
+V_{0,n} &= \{ \emptyset \} \text{ is a one-pint space.} \\
+V_{1,n} &= S^{n-1} \\
+F: V_{n,n} &\xleftrightarrow{\cong} O(n) : G \\
+\end{align*}
+where $F$ maps $(v_1, ..., v_n)$ to the matrix with colomns $v_i$ and $G$ maps
+$A$ to $(A e_1, ..., A e_n)$ where $e_i$ is the unit vecotr with a $0$ in the
+$i$-th entry and $0$'s elsewhere.
+
+The map $F : SO(n) \to V_{n-1,n}$ defined by $A \mapsto (A e_1, ..., A
+e_{n-1})$, is a continues bijection beween compact Housdorff spaces, and hence a
+homeomorphism.
+
+Bijectivity: Let $(v_1, ..., v_{n-1})$ be an $(n-1)$-frame in $\R^n$, then the
+orthonogal complement of the span of $v_1,...,v_{n-1}$ is 1-dim. So there are
+exactly 2 unit vectors in this complement. Exactly one of these makes
+$(v_1, ... ,v_{n-1},v_n)$ into an orthogonal basis of determinant $+1$.
+\end{exmp}
+    
+\begin{prop}
+The space $V_{k,n}$is a manifold of dimension
+\[ (n-1) + (n-2) + ... + (n-k) = nk - \frac{k(k+1)}{2}. \]
+\end{prop}
+
+\begin{proof}
+By induction on $k$. For $k=0$, $V_{0,n} = \{ \emptyset \}$ is a 0-manifold and for
+$k=1$, $V_{1,n} = S^{n-1}$ is a $(n-1)$-manifold.
+
+Now suppose $k \ge 2$. We consider the map $\phi : S_+^{n-1} \to O(n)$, where
+\[ S_+^{n-1} = \{ w \in S^{n-1} \q: w_1 > 0 \}, \]
+defined be the composition 
+
+\[
+\begin{tikzpicture}[node distance=2cm, auto]
+  \node (tl) {$S_+^{n-1}$};
+  \node (tm) [node distance=4.5cm, right of=tl] {$\GL_n(\R)$} ;
+  \node (tr) [node distance=5cm, right of=tm] {$O(n)$};
+  \node (bl) [below of=tl] {$O(n)$};
+  \node (bm) [below of=tm] {$
+        \pmat{ w_1 & 0 & \dots & 0 \\ 
+              w_2 & 1 &  & 0 \\
+           \vdots &   & \ddots &  &  \\
+              w_n & 0 &  & 1
+        }$};
+  \node (br) [below of=tr] {};
+  \draw[-to] (tl) to node {} (tm);
+  \draw[-to] (tm) to node {Gram-Schmidt Orth.} (tr);
+  \draw[|->] (bl) to node {$\cong$} (bm);
+\end{tikzpicture}
+\]
+
+Properties of $\psi$:
+\begin{itemize}
+\item $\psi$ is continues 
+\item $\psi(e_1) = \psi(1,0,..,0) = E_n = $ identity matrix
+\item $\psi(w) \cdot e_1 = w$ for all $w \in S_+^{n-1}$
+\end{itemize}
+
+Warning: There is not continues map $\psi : S^{n-1} \to O(n)$ such that
+$\psi(w) \cdot w = w$ for all $w\in S^{n-1}$.
+
+We define $U = \{ (v_1 ,...,v_k) \in V_{k,n} \q: v_1 \in S_+^{n-1} \}$; this is
+an open neighbourhood of $(e_1,...,e_k) \in V_{k,n}$.
+
+The map $\xi : U \to S_+^{n-1} \times V_{k-1,n-1}$ defined by
+\[ (v_1, ..., v_k) \mapsto (v_1, \psi(v_1)^{-1}(v_2), ..., \psi (v_1)^{-1}
+(v_k)) \]
+is a homeomorphism. 
+
+\begin{itemize}
+\item $\xi$ is well-defined: 
+$\psi(v_1)^{-1}$ is an orthogonal matrix such that $\psi(v_1)^{-1} (v_1) = e_1$,
+since $\psi(v_1)^{-1}$ is orthogonal and $v_2,...,v_k$ define a $k$-frame in
+$(v_1)^\perp$. So $\psi(v_1)^{-1}(v_2), ..., \psi(v_1)(v_k)$ defines a $k$-frame
+in $(e_1)^\perp = 0 \otimes \R^{n-1}$.
+\item $\xi$ is continues
+\item $\xi$ has a continues inverse:
+\[  S_+^{n-1} \times C_{k-1,n-1} \to U; \qquad (v, w_1, ..., w_{k-1}) \mapsto
+(v, \psi(v)(0,w_1), ..., \psi(v)(0,w_{k-1})), \]
+where $(0,w_i) \in \R^n = \R \otimes \R^{n-1}$.
+\end{itemize}
+
+Conclution:
+The point $(e_1,...,e_n) \in V_{k,n}$ has an open neighbourhood homeomorphic to
+$S_+^{n-1} \times V_{k-1,n-1}$, which is a manifold of dimension
+\[ d = (n-1) + (n-2) + (n-3) + ... + ( (n-1) - (k-1)), \]
+by induction. 
+So $(e_1,...,e_k)$ has an open neighbourhood homeomorphic to $\R^d$.
+
+Now let $(v_1, ...,v_k) \in V_{k,n}$ be any point. Complete to an orthogonal
+basis
+\[ A = (v_1, ..., v_k, v_{k+1}, ..., v_n) \in O(n). \]
+Then
+\[ A : V_{k,n} \to V_{k,n}; \qquad (w_1, ..., w_k) \mapsto (Aw_1, ..., Aw_k) \]
+is a self-homeomorphism of $V_{k,n}$ that sends $(e_1,...,e_k)$ to
+$(v_1,...,v_k)$. So also  $(v_1,...,v_k)$ has an open neighbourhood homeomorphic
+to $\R^d$.
+\end{proof}
+
+\begin{remark}
+What we really showed is that the map $V_{k,n} \to S^{n-1}$ defined by
+$(v_1,...,v_k) \mapsto v_1$ is a "locally trivial fibre bundle" with fibre
+$V_{k-1, n-1}$. 
+\end{remark}
+
+\subsection{Complex Steifel manifolds:}
+
+Let 
+\begin{align*}
+V^\C_{k,n} &= \{ (v_1,...,v_k) \in (\C^n)^k \q: \<{v_i, v_j} 
+\begin{cases} 1 \textif i = j \\ 0 \textif i \ne j \end{cases} \}
+&= \text{space of (complex) } k\text{-frames in } \C^n
+\end{align*}
+As in the real case, one shows that $V^\C_{k,n}$ is a compact $d$-manifold,
+where
+\[ d = (2n -1) + (2n-3) + ... + (2n - 2k + 1) = 2nk - k^2. \]
+
+\subsubsection{special case}
+
+\begin{align*}
+V^\C_{1,n} &= \text{unit sphere in } \C^n = S^{2n-1} \\
+V^\C_{n-1,n} &\cong \SU(n), \\
+V^\C_{n,n} &\cong \U(n)
+\end{align*}
+Same induction proof, with Gram-Schmidt orthonormalization for hermitian inner
+product spaces; In the indutive step, you work over $S_+^{2n-1} = \{ (v_1, ...,
+v_n) \in S^{n-1} \q: \Re(v_1) > 0 \}$.
+
+
+\subsection{Quaternion Stiefel manifolds:}
+$V^\H_{k,n}$ defines compact manifolds of dimention
+\[ (4n-1) + (4n-5) + ... + (4n-4k+3) = 4nk - k(2k-1). \]
+
+
+
+\subsubsection{special case}
+\begin{align*}
+V^\H_{1,n} &= \text{unit sphere in } \H^n \cong S^{4n-1}, \\
+V^\H_{n,n} &= \Sp(n) = \{ A \in M(n\times n, \H) \q: A\dot \bar{A}^T =
+\bar{A}^T\cdot A = E_n \}.
+\end{align*}
+
+\end{document}

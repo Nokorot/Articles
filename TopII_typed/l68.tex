@@ -1,0 +1,69 @@
+\documentclass[a4paper,11pt,english]{article}
+\usepackage{.style}
+
+%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\textbf{Topology II - The mod-2 fundamental class}}
+\author{Tor Gjone}
+
+%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%
+\input{defs}
+
+\def\F{\mathbb{F}}
+
+%%%%%%%% Content %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\mmaketitle
+
+% NOT Complete
+% Missing proofs 
+
+\begin{thrm}
+Let $M$ be a compact connected orientable $n$-manifold. Then for all $x \in M$
+and all coefficient groups $A$, the restriction map $r^M_x : H_n(M;A) \to
+H_n(M|x;A) \cong A$ is an isomorphism.
+\end{thrm}
+
+
+\begin{proof}
+
+\end{proof}
+
+\begin{note}
+The proof showed that the map $H_n(M;\Z) \otimes A \to H_n(M;A)$ from the
+universal coefficient theorem is an isomorphism. Hence its cokernel
+$\Tor(H_{n-1}(H;\Z), A)$ is zero for all abelian groups $A$. In particular, for
+all $k \ge 1$, 
+\[  k\text{-torsion in } H_{n-1}(M;\Z) \cong \Tor(H_{n-1}(M;\Z), \Z/k) = 0. \]
+So the group $H_{n-1}(M;\Z)$ is torsion free for every compact, connected
+orientable $n$-manifold $M$.
+\end{note}
+
+Next: "in mod-2 homology there are no orientability issues because $\F_2$ has
+only one unit"
+
+\begin{thrm}
+Let $M$ be an $n$-manifold and $K$ a compact subset of $M$. Then there is a
+unique class $\nu_K \in H_n(M|K; \F_2)$ such that for all $x \in K$, the class
+$r^K_x(\mu_K)$ is non-zero, and hence a generator of $H_n(M|x;\F_2) \cong \F_2$.
+\end{thrm}
+
+\begin{corol}
+Let $M$ be a compact connected $n$-manifold. Then for very $x \in M$ the map 
+\[ r^M_x : H_n(M;\F_2) \to H_n(M|x;\F_2) \cong \F_2 \]
+is an isomorphism. If $M \ne \emptyset$, then in particular $H_n(M;\F_2) \cong
+\F_2$.
+\end{corol}
+
+\begin{proof}
+Exactly as in the previous video for $\Z$-coefficients and orientable $M$.
+\end{proof}
+
+\begin{remark}
+Let $M$ be a connected, compact, non-orientable manifold. Then $H_n(M;\Z) = 0$
+by the previous video. The universal coefficient theorem provides and
+isomorphism  
+\[ \F_2 \cong H_n(M; \F_2) \congto \Tor(H_{n-1}(M;\Z), \F_2) = 2\text{-torsion
+in } H_{n-1} (M;\Z). \]
+\end{remark}
+
+\end{document}

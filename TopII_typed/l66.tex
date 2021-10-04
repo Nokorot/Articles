@@ -1,0 +1,105 @@
+\documentclass[a4paper,11pt,english]{article}
+\usepackage{.style}
+
+%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\textbf{Topology II - Homology vanishing above the dimension}}
+\author{Tor Gjone}
+
+%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%
+\input{defs}
+
+\DeclareMathOperator{\Gr}{Gr}
+
+%%%%%%%% Content %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\mmaketitle
+
+% NOT Complete
+% Missing proofs 
+
+All of the manifolds that we explicitly discussed admit CW-structures:
+
+\begin{itemize}
+\item $S^n$, $\RP^n$, $\CP^n$ and $\HP^n$,
+\item $V_{k,n}$, $\Gr_{k,n}$: CW-structures exists.
+\end{itemize}
+
+In all these cases: manifold dimension = CW-dimension
+
+This is no coincidence: Suppose that a compact manifold $M$ admits a
+CW-structure; let $x\in M$ be an interior point of a cell of top dimension 
+(in the CW-structure). Then the open cell is is an open neighbourhood
+homeomorphic to $\R^n$ with $n = $ CW-dimension of $M$. Since the manifold
+dimension is intrinsic, $n =$ manifold dimension.
+
+\begin{corol}
+Let $M$ be a compact $n$-manifold that admits a CW-structure. Then
+$H_i(M; A) \cong H_i^{\text{cell}}(M;A) = 0$ for $i > n$.
+\end{corol}
+
+Warning: compact manifolds do not in general admit CW-structures. But every
+smooth compact manifold admits a triangulation, and hence a CW-structure.
+
+Notation: For $M$ an $n$-manifold, $A$ an abelian group and $U \subset M$, let $H_i(M|U; A) =
+H_i(M, M \setminus U; A)$ denote the local $i$'th homology at $U$ with values in $A$.
+
+\begin{thrm}
+Let $M$ be an $n$-manifold, $A$ and abelian group and $K$ a compact subset of
+$M$. Then
+\begin{enumerate}
+\item[(i)] $H_i(M|K; A) = 0$ for $i > n$.
+\item[(ii)] A class in $H_n(M|K; A)$ is zero if and only if its
+restriction to $H_n(M|x; A)$ is zero for all $x \in K$.
+\end{enumerate}
+\end{thrm}
+
+\begin{note}
+$M$ needs not be compact. But if $M$ is compact, then $K = M$ is allowed and
+then both statements refer to absolute homology of $M$.
+\end{note}
+
+
+\begin{proof}
+(The proof follows the proof of Lemma A.7 in Appendix A of Milnor-Stasheff's
+book "Characteristic Classes")
+
+The proof is done in 6 steps.
+
+\begin{enumerate}
+\item[(Step 1)] Consider $M = \R^n$, $K$ is a compact convex non-empty subset.
+For every $x \in K$, $K$ can be linearly contracted onto $x$. Let $R > 0$ be
+large enough so that $K \subseteq B^{n-1}_R(x) := \{ y \in \R^n \q: |x-y| \le R
+\}$. Then the inclusion
+\[ S^{-1}_{2R}(x) := \{ y \in \R^n \q: |x-y| = 2R \} \subseteq M\setminus K
+\subseteq M \setminus \{ x \}, \]
+defines homotopy equivalences. So the induced map $H_i(M|K) \to
+H_i(M|x)$ is an isomorphism.
+
+In particular, $H_i(M|K) \cong H_i(M|x) \cong 0$ for $i > n$.
+
+\item[(Step 2)]
+Let $M$ be any $n$-manifold, $K = K_1 \cup K_2$ for $K_!, K_2$ compact, suppose
+the statements are true for $K_1, K_2$ and $K_1 \cap K_2$. Then the statements
+also hold for $K$. We have a long exact Mayer-Vietro's sequence for the local
+homology groups. 
+
+\underline{Construction:}
+\[ M \setminus (K_1 \cap K_2) = (M\setminus K_1) \cup (M \setminus K_2)
+\qq{\text{and}} (M\setminus K_1) \cap (M \setminus K_2) = M \setminus (K_1 \cup
+K_2) = M \setminus K. \]
+The theorem of small subjections show that the map 
+\[ \frac{C_*(M\setminus K_1) \oplus C_*(M\setminus K_2)}{C_*(M\setminus K)}
+\incto[\cong] C_*(M \setminus (K_1 \cap K_2)) \]
+is an isomorphism of all homology groups.
+
+So the chain map
+\[  D := \frac{C_*(M)}{ \left( \frac{C_*(M\setminus K_1) \oplus C_*(M\setminus
+K_2)}{C_*(M\setminus K)} \right) } \congto \frac{C_*(M)}{C_*(M\setminus
+(K_1 \cap K_2))} \]
+is also a quasi-isomorphism.
+
+The so
+\end{enumerate}
+\end{proof}
+
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass[a4paper,11pt,english]{article}
+\usepackage{.style}
+
+%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\textbf{Topology II - The fundamental class}}
+\author{Tor Gjone}
+
+%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%
+\input{defs}
+
+\newcommand{\bM}{\bar{M}}
+\DeclareMathOperator{\supp}{supp}
+
+%%%%%%%% Content %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\mmaketitle
+
+% NOT Complete
+% Missing proofs 
+
+Homology of some connected compact manifolds: 
+
+\begin{align*}
+H_n(S^n;\Z) &\cong H_{2n}(\CP^n; \Z) \cong H_{4n}(\HP^n;\Z) \cong \Z \\
+H_n(\RP^n; \Z) &\cong \begin{cases} \Z &\tif n \text{ is odd} \\ 0 &\tif n \text{ is even} \end{cases}
+\end{align*}
+
+We will show locally that for a connected, compact, non-empty $n$-manifold
+$M$, 
+\[ H_n(M; \Z) \cong \begin{cases} \Z &\tif M \text{ is orientable} \\ 0 &\tif n
+\text{ is not orientable} \end{cases} \]
+
+\begin{thrm}
+Let $M$ be an orientable $n$-manifold and let $K$ ve a compat subset of
+$M$. Then there is a unique class $\mu_K \in H_n(M|K)$ such that
+$r^K_x(\mu_K) = \mu_x$ gives local orientation in $H_n(M|x)$ for all $x\in K$. 
+\end{thrm}
+
+\subsection{Important special calse:} 
+If $M$ is it self compact, we can take $K = M$; there is then a unique class
+$\mu_M = [M] \in H_n(M;\Z)$, the \wddef{fundamental class} such that
+$r^M_x[M] = \mu_x$ in $H_n(M|x)$ for all $x\in M$.
+
+We will show later that if $M$ is moreover connected and non-empty then
+$H_n(M; \Z) \cong \Z$ with generator $[M]$.
+
+
+\begin{remark}
+Let $M$ be orientable, compact, connected. Let $\bar{M}$ be $M$ with the
+opposite orientation. Then $[\bM] = -[M]$, because both have the same image in
+$H_n(M|x)$ for all $x \in M$.
+\end{remark}
+
+\begin{remark}
+Compactness is necessary: Let $M$ be an $n$-manifold and $U \in H_n(M; A)$
+(for $A$ some abelian group) such that $r^M_x(u) \ne 0$ in $H_n(M|x;A)$ for all
+$x \in M$. Then $M$ is compact. Indeed, write $u = [x]$ for some $n$-cycle $x
+\in C_n(M;A)$. Write $x \in \sum_{\text{finite}} a_i (f_i : \nabla^n \to M)$,
+and set $L = \supp(x) = \cup f_i(\nabla^n)$, some compact subset of $M$. 
+
+If $M$ is not compact, there is a point $x \in M \setminus L$. So $x \in
+C_n(M \setminus \{ x \}; A)$ is a cycle in $M \setminus \{ x \}$. So $u = [x]$
+has zero image in $H_n(M|x;A)$ This contradicts the assumption on $u$.
+\end{remark}
+
+\begin{proof}
+(following the proof of Theorem A.8 in Appendix A of Milnor-Stasheff's
+"Characteristic Classes")
+
+Yet to be typed up.
+\end{proof}
+
+\begin{corol}
+Let $M$ be an orientable, compact, connected $n$-manifold. Then for all $x\in
+M$, the map 
+\[ r^M_x : H_n(M;\Z) \to H_n(M|x) \]
+is an isomorphism. So if $M$ is non-empty, $H_n(M;\Z)$ is free of rank 1, and
+the fundamental class of the two orientations are the two generators.
+\end{corol}
+
+\begin{proof}
+To Be done
+\end{proof}
+
+\begin{corol}
+Let $M$ be a compact, connected $n$-manifold that is not orientable. Then
+$H_n(M;\Z) = 0$.
+\end{corol}
+
+\end{document}

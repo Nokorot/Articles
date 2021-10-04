@@ -1,0 +1,284 @@
+\documentclass[a4paper,11pt,english]{article}
+\usepackage{.style}
+
+%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\textbf{Topology II - Cohomology}}
+\author{Tor Gjone}
+
+%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%
+\input{defs}
+
+\def\tM{\widetilde{M}}
+\def\oD{\mathring{D}}
+
+\usetikzlibrary{positioning}
+%%%%%%%% Content %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\mmaketitle
+
+% Complete
+
+Notation: 
+\begin{itemize}
+\item Coefficients for homology will always be $\Z$, omitted from the notation.
+\item If $X$is a space and $Y\subset X$, we write $H_n(X|Y) = H_n(X,X\setminus
+Y; \Z)$ "local homology at $Y$".
+
+Note: if $Y \subset U \subset X$ and $U$ is a neighbourhood of $Y$, then
+excision provides an isomorphism 
+\[ H_n(U|Y) = H_n(U,U\setminus Y) \congto H_n(X,X\setminus Y) = H_n(X|Y). \]
+\end{itemize}
+
+For $n$-manifold $M$ and $x\in M$, 
+\[ H_n(M|x) := H_n(M,M\setminus \{x\}; \Z) \cong \Z. \]
+A \wddef{local orientation} of $M$ at $x$ is a generator of $H_n(M|x)$. There
+are exactly two local orientations.
+
+Heuristically:  an orientation of $M$is a "continues choice" of local
+orientations.
+
+\underline{Construction: (The orientation covering)}
+
+Let $M$ be an $n$-manifold. Set
+\[ \tM = \{ (x,\mu) \q: x \in M, \mu\in H_n(M|x) \text{ a local
+orientation} \}. \]
+
+The map $p : \tM \to M$, defined by $p(x,\mu) = x$ is surjective and every
+point has exactly two pre-images.
+
+We endow $\tM$ with a topology that makes $p$ into a two fold covering.
+A subset $B$ of $M$ is a local ball if $B$ is open and there is a homeomorphism
+$\phi : \R^n \to U$, for some open neighbourhood $U$ of $B$, such that
+$\phi(\oD^n) = B$, where $\oD^n = \{ x\in\R^n \q: |x| < 1 \}$.
+
+
+Note: the inclusion $M\setminus B \to M\setminus \{ x \}$ is a homotopy
+equivalence for all $x\in B$. So it induces an isomorphism 
+\[ r^B_x : H_n(M|B) \congto H_n(M|x) \cong \Z. \]
+
+We let $\mu \in H_n(M|B)$ be a generator and define
+\[ U(B,\mu) = \{ (x,r^B_x(\mu)) \q: x\in B \} \subseteq \tM. \]
+
+\begin{thrm}
+Let $M$ be an $n$-manifold.
+\begin{enumerate}
+\item As $(B,\mu)$ varies over all local balls $B$ and all generators of
+$H_n(M|B)$, the sets $U(B,\mu)$ form the basis of a topology on $\tM$.
+
+\item For this topology, the map $p: \tM \to M$, defined by $p(x,\nu) = x$, is a
+twofold covering map, the \wddef{orientation covering} $M$.
+
+\item $\tM$ is an $n$-manifold.
+\end{enumerate}
+\end{thrm}
+
+\begin{proof}
+\begin{enumerate}
+\item We show that $U(B, \mu) \cap U(B',\mu')$ is a union of basis sets.
+
+Let $(x,\nu) \in U(B,\mu) \cap U(B',\mu')$. Then $x\in B\cap B'$ and $\nu =
+r^B_x(\mu) = r^{B'}_x(\mu')$. We choose another local ball $B''$ with $x \in B''
+\subseteq B\cap B'$.
+
+We obtain a diagram of local homology groups
+
+\[ 
+\begin{tikzpicture}[align=center, node distance=3cm, auto]
+\node (tl)                      { $H_n(M|B)$ };
+\node (ma) [below right=.5cm and 2cm of tl]  { $H_n(M|B\cap B')$ };
+\node (mb) [right of=ma]        { $H_n(M|B'')$ };
+\node (mc) [right of=mb]        { $H_n(M|x)$ };
+\node (bl) [below=1.5cm of tl]   { $H_n(M|B')$ };
+\draw[-to] (tl) to node {} (ma);
+\draw[-to] (bl) to node {} (ma);
+\draw[-to] (ma) to node {} (mb);
+\draw[-to] (mb) to node {} (mc);
+\draw[-to] (bl) to [out=0, in=200] node {} (mc);
+\draw[-to] (bl) to [out=0, in=200] node {} (mb);
+\draw[-to] (tl) to [out=0, in=170] node {} (mc);
+\draw[-to] (tl) to [out=0, in=170] node {} (mb);
+\end{tikzpicture}
+\]
+Where all the maps are isomorphisms. Since $\mu$ and $\mu'$ restrict to the same
+generator of $H_n(M|x)$, they also restrict to the same generator $\mu'' =
+r^B_{B''}(\mu) = r^{B'}_{B''}(\mu')$ of
+$H_n(M|B'')$. 
+
+Hence:
+\[ (x,\nu) \in U(B'', \mu'') \subseteq U(B,\mu) \cap U(B',\mu'). \]
+So the sets $U(B,\mu)$ form a basis for a topology on $\tM$.
+
+\item
+Because $M$ is an $n$-manifold, the local balls form a basis of the topology of
+$M$. Moreover $p^{-1}(B) = U(B,\mu) \dot{\cup} U(B,-\mu)$ where $\pm \mu$ are
+the two generators of $H_n(M|B)$.
+
+So $p$ is continues. Morover, the restriction $p|_{U(B,\mu)} : U(B,\mu) \to B$
+is a bijective continues map. The map is also open (and hence a homeomorphism)
+because a basis of the subspace topology of $U(B,\mu)$ is given by the sets
+$U(B'',\mu'')$ for local balls $B'' \subseteq B$ and $\mu'' = r^B_{B''}(\mu)$.
+Because $p(U(B'',\mu'')) = B''$is open in $M$, the restriction of $p$ to
+$U(B,\mu)$ is an open map.
+
+So $p^{-1} (B) \cong B \coprod B$ is homeomorphic in a way that matches $p$with
+the local map $B\coprod B \to B$. So $p$ is a twofold covering map.
+
+\item 
+By design, every point $(x,\nu) \in \tM$ has an open neighbourhood $U(B,\mu)$,
+which is homeomorphic to $B \cong \oD^n \cong \R^n$. So $\tM$ is locally
+euclidean of dimension $n$. Since $M$ is Hausdorff and $p: \tM \to M$ a
+covering, $\tM$ is Hausdorff.
+\end{enumerate}
+\end{proof}
+
+\begin{defn}
+An \wddef{orientation} of an $n$-manifold $M$ is a continues section $s: M \to
+\tM$ of the covering $p: \tM \to M$. The manifold $M$ is \wddef{orientable} is
+there exists an orientation of $M$.
+\end{defn}
+
+\begin{remark}
+Because manifolds are locally euclidean, their path components are open. So
+manifolds are the topological disjoint union of their path components. For many
+purposes one can restrict to connected manifolds by considering each path
+component separately.
+\end{remark}
+
+\begin{corol}
+A connected orientable manifold has exactly 2 orientations. An orientable
+manifold with $n$ components has $2^n$ orientations.
+\end{corol}
+
+\begin{proof}
+If $M$ is orientable, then $\tM \cong M\coprod M$, taking $p : \tM \to M$ to the
+be fold map. So there are exactly two continues sections if $M$ is connected. In
+general, you can independently choose an orientation of each path component.
+\end{proof}
+
+\begin{note}
+If $M$ is connected, $p: \tM \to M$ is a product cover $\lra$ there is a continues
+section of $p$, $\lra$ $M$ is orientable.
+\end{note}
+
+\begin{corol}
+Let $M$ be a connected $n$-manifold such that for some (hence ant) $x\in M$, the
+group $\pi_1(M, x)$ does \underline{not} have a subgroup of index 2. Then $M$is
+orientable. In particular, all simply connected manifolds are orientable.
+\end{corol}
+
+\begin{proof}
+Let $\tilde{x} \in \tM$ be any point over $x$. If $M$ is not orientable, then
+$p:\tM \to M$ is not a product cover, and $\tM$ would be connected. So
+$p_* : \pi_1(\tM,\tilde{x}) \to \pi_1(M,x)$ is an injective group homomorphism
+whose image has index $2$ in $\pi_1(M,x)$. This contradicts the hypothesis, so
+$M$ is orientable.
+\end{proof}
+
+\begin{exmp}
+$S^n$ is simply connected for $n \ge 2$, and hence orientable. For all $n\ge 1$,
+$\CP^n$ and $\HP^n$ are simply connected, and hence orientable.
+\end{exmp}
+
+\begin{exmp}
+Let $M$ be an $n$-manifold that also admits the structure of a topological
+group, i.e. a gorup structure such that the mulriplication and iverse maps are
+continues in the given topology. Then $M$ is orientable. Examples: $S^1$,
+$\O(n)$, $\U(n)$, $\Sp(n)$ and $\SU(n)$.
+\end{exmp}
+
+\begin{proof}
+Let $m: M\times M \to M$ be the group structure and let $e\in M$ be the natural
+element. We choose a local orientation $\mu_0 \in H_n(M|e)$. For any $x\in M$,
+the map $m(x,-) : M \to M$ is a homeomorphism, with inverse $m(x^{-1}, -)$, that
+sends $e$ to $m$. So it induces an isomorphism of local homology groups
+\[ m(x, -)_* : H_(M|e) \congto H_n(M|x); \quad \mu_0 \mapsto \mu_x. \]
+
+We define $s:M\to \tM$ by $s(x) = \mu_x = m(x,-)_* (\mu_0)$, this is continues
+and hence an orientation of $M$.
+\end{proof}
+
+\newcommand{\tx}{\tilde{x}}
+
+\begin{prop}
+Let $M$ be an $n$-manifold
+\begin{enumerate}
+\item[(i)] The manifold $\tM$ is orientable and the map $\tau : \tM \to \tM$,
+$\tau(x,\nu) = (x,-\nu)$ reverses the local orientation of $\tM$.
+\item[(ii)] Suppose that $q: N \to M$ is a 2-fold covering and $N$ an orientable
+manifold. Moreover, suppose that the non-identity dichtransformation $\tau: N
+\to N$ reverses the local orientations. Then $q: N \to M$ is isomorphic, as a
+covering, to $p: \tM \to M$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\begin{enumerate}
+\item[(i)] Let $\tx = (x,\mu) \in \tM$. Since $p: \tM \to M$ is a local
+homeomorphism, it induces an isomorphism 
+\[ p_0 : H_n(\tM,\tx) \congto H_n(M|x) = H_n(M|p(\tx)). \]
+We let $p_*^{-1} (\mu)$ be the "tautological" local orientation of $\tM$ at
+$\tx$. This defines a continues (!) map 
+\[ \tM \to \widetilde{\tM}; \quad \tx = (x,\mu) \mapsto (\tx,p_*^{-1}(\mu)), \]
+hence an orientation of $\tM$.
+
+
+\begin{align*}
+\tau_* : H_n(\tM | \tx) &\to H_n(\tM| \tau(\tx)) \\
+(\tx, p_*^{-1}) &\mapsto (\tau(\tx), \tau_*(p_*^{-1}(\mu))) \\
+&= ((x,-\mu), p_*^{-1}(\mu)) \\
+&= ( (x,-\mu), -p_*^{-1}(-\mu)) \\
+&\ne ((x,-\mu), p_*(-\mu))
+\end{align*}
+So $\tau$ reverts the local orientation of $\tM$.
+
+\item[(ii)] Let $q:N \to M$ be any 2-fold covering such that $N$ is orientable
+and $\tau : N\to N$ is orientation reverting. Let $\{ \mu_y \}_{y\inN}$ be an
+oreintation of $N$. We define $f: N \to \tM$ by $f(y) = (q(y, q_*(\mu_y)) \in
+\tM)$, where $q_* : H_n(N,y) \congto H_n(M, q(y))$.
+The continuity of the local orientations $\{\mu_y\}$ ipmiles the continuity of
+$f(!)$. Because $\tau : N\to N$ reverses the orientation, $f$ is compatible with
+the non-trivial dich transformations:
+\begin{align*}
+f(\tau y) &= (q(y), q_*(\mu_{\tau y})) \\
+&= (q(y), q_*(-\tau_*|\mu_y)), \quad \tau: N\to N \text{ reverts the
+orientation} \\
+&= (q(y), -q_*(\mu_y)), \qquad q\tau = q \\
+&= \tau(q(y), q_*(\mu_y)) \\
+&= \tau(f(y))
+\end{align*}
+
+So $f$is a continues bijection between two fold coverings over the same base
+$M$, so $f$ is also open, and hence an isomorphism of coverings.
+\end{enumerate}
+\end{proof}
+
+
+\begin{exmp}
+The antipital map $A : S^n \to S^n$, defined by $A(x) = -x$, has degree
+$(-1)^{n+1}$.
+LEt $e \in H_n(S^n; \Z)$ be any generator and orient $S^n$ by the image of $e$
+in $H_n(S^n|x)$ for all $x \in S^n$. 
+So $A$is orientation reversing if and only if $n$ is even.
+The projection $q:S^n \to \RP^n$, $q(x) = \R \cdot x$, is a 2-fold covering with
+orientable total space. 
+
+If $n$ is even, the non-identity dechtransformation $A$ reverses the
+orientation. So for $n$ even, $q: S^n \to \RP^n$ is isomorphic to the
+orientatin covering of $\RP^n$. So for all $n$ even, $\RP^n$ is
+\underline{not} orientable.
+\end{exmp}
+
+\begin{exmp}
+For $n$ odd, $\RP^n$ is orientable. We construct an orientation of $\RP^n$ by
+choosing a generator $e \in H_n(S^n; \Z)$ and define the local orientation at
+$\R \cdot x \in \RP^n$  as the image of $e$ under the isomorphism.
+\[ H_n(S^n; \Z) \congto H_n(S^n|x) \xrightarrow[q]{\cong} H_n(\RP^n| \R\cdot x);
+e \mapsto \mu_{\R\cdot x} \]
+
+Because the antipital map has degree $+$, this yields the same orientation for
+$x$ and $-x$. In short all the local orientations arise from one class in
+$H_n(\RP^n;\Z)$, so they vary continuesly in $\R x \in \RP^n$.
+\end{exmp}
+
+
+\end{document}

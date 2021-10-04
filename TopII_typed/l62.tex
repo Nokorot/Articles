@@ -1,0 +1,111 @@
+\documentclass[a4paper,11pt,english]{article}
+\usepackage{.style}
+
+%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\textbf{Topology II - Manifolds}}
+\author{Tor Gjone}
+
+%%%%%%% Definitions %%%%%%%%%%%%%%%%%%%%%
+\input{defs}
+
+%%%%%%%% Content %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\mmaketitle
+
+% Complete
+
+\begin{defn}
+An \wddef{$m$-manifold} is a Hausdorff space $M$ such that every point of $M$ has an open neighborhood homeomorphic to $\R^m$.
+The number $m \ge 0$ is the \wddef{dimension} of $M$.
+\end{defn}
+
+\begin{remark}
+The empty space is an $m$-manifold for all $m\ge 0$.
+For non-empty manifolds, the dimension is intrinsic and can be calculated from the local homology groups:
+
+Let $M$ be a manifold, $x \in M$. Let $U \subset M$ be an open neighborhood of $x$ that admits a homeomorphism $\phi: \R^m \to U$, such that $\phi(0) = x$.
+
+Then:
+
+\[\begin{tikzpicture}[node distance=2cm, auto]
+  \node (tl1) {$H_i(M,M\setminus\{x\}; \Z)$};
+  \node (tl) [node distance=4.5cm, right of=tl1] {$H_i(U,U\setminus\{x\}; \Z)$};
+  \node (tr) [node distance=4.5cm, right of=tl] {$H_i(\R^m,R^m\setminus\{0\}; \Z)$};
+  \node (bl1) [below of=tl1] {$\begin{rcases}\Z &\text{if } i=m \\ 0 &\text{if } i\ne m\end{rcases}$};
+  \node (bl)  [below of=tl] {$\tilde{H}_{i-1}(S^{m-1}; \Z)$};
+  \node (br)  [below of=tr] {$\tilde{H}_{i-1}(\R^{m} \setminus\{0\}; \Z)$};
+  \draw[-to] (tl) to node {excision} (tl1);
+  \draw[-to] (tr) to node {$\phi_*$} (tl);
+  \draw[-to] (tr) to node {$\partial$} (br);
+  \draw[-to] (br) to node {inclusion} (bl);
+  \draw[-to] (bl) to node {$\cong$} (bl1);
+\end{tikzpicture}\]
+
+So the dimensions of $M$ is the dimension in which the local homology is concentrated.
+\end{remark}
+
+
+\begin{remark}
+The Hausdorff condition is included to avoid certain pathological examples, such as the "line with double origin":
+\[ X = \R \times \{0,1\} / \sim \]
+where $(x, 0) \sim (x,1)$ for all $x \ne 0$.
+\end{remark}
+
+\begin{exmp}
+Open subsets of $\R^m$ are $m$-manifolds.
+\end{exmp}
+
+\begin{exmp}
+Let $M$ be a Hausdorff space such that every point has an open neighbourhood that is an $m$-manifold.
+Then $M$ is an $m$-manifold. In particular, the disjoint union (with disjoint union topology)
+of two $m$-manifolds is an $m$-manifold.
+\end{exmp} 
+
+\begin{exmp}
+Let  $M$ be an $m$-manifold and $N$ and $n$-manifold. Then $M\times N$ (with the product topology)
+is an $(m+n)$-manifold. 
+\end{exmp}
+
+\begin{exmp}
+The $n$-sphere $S^n = \{(x_1, ..., x_{n+1}) \in \R^{n+1} \q: x_1^2 + ... + x_{n+1}^2 = 1 \}$ is an $n$-manifold.
+\end{exmp}
+
+
+For $x =(x_1, ..., x_{n+1}) \in S^n$ let $Y = \{ y \in \R^{n+1} : \<{y,x} = 0\}$ be the orthogonal complement. The \wddef{stereographic projection} is homeomorphism 
+\[ p: S^n\setminus\{-x\} \xrightarrow{\cong} Y \cong \R^{n}, \]
+defined by 
+\[ p(z) = \frac{z - \<{z,x \cdot x}}{1 + \<{z,x}}. \] 
+
+
+\begin{exmp}
+\def\RP{\mathbb{RP}}
+
+The real projective space $\RP^n = S^n / \textbf{antipodal map}$ is an $n$-manifold.
+Consider any point $\{x, -x\} \in \RP^n$, choose one of the points $x$. Let 
+\[ U = \{ z \in S^n \q: \<{z,x} > 0\} = \text{"hemisphere around x"}. \]
+Then the composite
+\[ \R^n \cong U \hookrightarrow S^n \xrightarrow{\text{quotient}} \RP^n \]
+is a homeomorphism of open neighbourhoods of $\{x,-x\}$.
+\end{exmp}
+
+\begin{exmp}
+
+The complex projective space $\CP^n = \{ L \subset \C^{n+1} \q: L \text{ a } 1\text{-dim } \C\text{-subspace of } \C \}$ is a $2n$-manifold. Consider first $L_0 = [0:...:0:1] \in \CP^n$.
+Then 
+\[ \R^{2n} = \C^n \to \CP^n, \]
+defined by
+\[ (z_1, ..., z_n) \mapsto [z_1 : ... : z_n : 1] \]
+is a homeomorphism onto an open neighbourhood of $L_0$.
+
+If $L\in \CP^n$ is any complex line in $\C^{n+1}$, let $v\in L$ be a non-zero vector, and choose an invertible matrix $A \in \GL_{n+1}(\C)$ such that $A \cdot (0,...,0,1) = v$.
+Then
+\[ A: \CP^n \to \CP^n; L \mapsto A \cdot L \]
+is a self-homomorphism of $\CP^n$ that maps $L_0$ to $\C \cdot v = L$. Since $\CP^n$ is locally homeomorphic to $\R^{2n}$ around $L_0$, is is also locally homeomorphic to $\R^{2n}$ around $L$.
+\end{exmp}
+
+\begin{exmp}
+The quaternic projective space $\HP^n = \{ L \subset \H^{n+1} \q: L \text{ a } 1\text{-dim left } \H\text{-subspace of } \H \}$.
+Similarly as for the complex case, $\HP^n$ is a $4n$-manifold.
+\end{exmp}
+
+\end{document}
