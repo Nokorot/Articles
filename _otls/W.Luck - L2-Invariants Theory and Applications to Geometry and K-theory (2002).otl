@@ -1,0 +1,235 @@
+1	1	0. Introduction
+2	1	0.1 What are L2-Invariants?
+2	2	0.2 Some Applications of L2-Invariants
+2	3	0.3 Some Open Problems Concerning L2-Invariants
+2	5	0.4 L2-Invariants and Heat Kernels
+2	6	0.5 L2-Invariants and Cellular Chain Complexes
+2	7	0.6 L2-Betti Numbers and Betti Numbers
+2	8	0.7 L2-Invariants and Ring-Theory
+2	10	0.8 L2-Invariants and K-Theory
+2	11	0.9 L2-Invariants and Aspherical Manifolds
+2	12	0.10 L2-Invariants and Groups
+1	13	1. L2-Betti Numbers
+2	13	Introduction.
+2	14	1.1 Group von Neumann Algebras and Hilbert Modules.
+3	14	1.1.1 Group von Neumann Algebras
+3	16	1.1.2 Hilbert Modules
+3	16	1.1.3 Dimension Theory
+3	24	1.1.4 Hilbert Chain Complexes
+3	29	1.1.5 Induction for Group von Neumann Algebras
+2	30	1.2 Cellular L2-Betti Numbers
+3	31	1.2.1 Survey on G-CW-Complexes
+3	33	1.2.2 The Cellular L2-Chain Complex
+3	37	1.2.3 Basic Properties of Cellular L2-Betti Numbers
+3	45	1.2.4 L2-Betti Numbers and Aspherical Spaces
+2	49	1.3 Analytic L2-Betti Numbers
+3	49	1.3.1 The Classical Hodge-de Rham Theorem
+3	52	1.3.2 Analytic Definition of L2-Betti Numbers
+2	54	1.4 Comparison of Analytic and Cellular L2-Betti Numbers
+3	55	1.4.1 Survey on Unbounded Operators and Spectral Families
+3	58	1.4.2 L2-Hodge-de Rham Theorem
+2	63	1.5 L2-Betti Numbers of Manifolds with Boundary
+2	65	1.6 Miscellaneous
+2	68	Exercises
+1	71	2. Novikov-Shubin Invariants
+2	71	Introduction.
+2	72	2.1 Spectral Density Functions
+3	72	2.1.1 Spectral Density Functions of Morphisms
+3	81	2.1.2 Spectral Density Functions of Hilbert Chain Complexes
+3	86	2.1.3 Product Formula for Novikov-Shubin Invariants
+3	93	2.1.4 The Laplacian in Dimension Zero.
+2	96	2.2 Cellular Novikov-Shubin Invariants
+2	103	2.3 Analytic Novikov-Shubin Invariants
+2	106	2.4 Comparison of Analytic and Cellular Novikov-Shubin Invariants
+2	112	2.5 On the Positivity and Rationality of the Novikov-Shubin Invariants
+2	114	2.6 Novikov-Shubin Invariants of Manifolds with Boundary.
+2	115	2.7 Miscellaneous
+2	117	Exercises
+1	119	3. L2-Torsion
+2	119	Introduction.
+2	120	3.1 Survey on Torsion Invariants
+3	120	3.1.1 Whitehead Groups
+3	121	3.1.2 Whitehead Torsion
+3	123	3.1.3 Reidemeister Torsion
+2	126	3.2 Fuglede-Kadison Determinant
+2	139	3.3 L2-Torsion of Hilbert Chain Complexes
+3	140	3.3.1 Basic Definitions and Properties of L2-Torsion
+3	144	3.3.2 L2-Torsion and Chain Contractions
+3	148	3.3.3 Proofs of the Basic Properties of L2-Torsion
+2	160	3.4 Cellular L2-Torsion
+3	160	3.4.1 Cellular L2-Torsion in the Weakly-Acyclic Case
+3	172	3.4.2 Cellular L2-Torsion in the Weakly-Acyclic and Aspherical Case
+3	176	3.4.3 Topological L2-Torsion for Riemannian Manifolds
+2	178	3.5 Analytic L2-Torsion
+3	178	3.5.1 Definition of Analytic L2-Torsion
+3	181	3.5.2 The Laplace Transform of a Density Function
+3	186	3.5.3 Comparison of Topological and Analytic L2-Torsion
+3	186	3.5.4 Analytic L2-Torsion for Hyperbolic Manifolds
+2	190	3.6 L2-Torsion of Manifolds with Boundary
+2	193	3.7 Combinatorial Computations of L2-Invariants
+2	200	3.8 Miscellaneous
+2	205	Exercises
+1	211	4. L2-Invariants of 3-Manifolds
+2	211	Introduction.
+2	211	4.1 Survey on 3-Manifolds
+2	214	4.2 L2-Invariants of 3-Manifolds
+2	217	4.3 L2-Invariants of Knot Complements
+2	218	4.4 Miscellaneous
+2	220	Exercises
+1	223	5. L2-Invariants of Symmetric Spaces.
+2	223	Introduction.
+2	223	5.1 Survey on Symmetric Spaces
+2	227	5.2 L2-Invariants of Symmetric Spaces of Non-Compact Type
+2	229	5.3 L2-Invariants of Symmetric Spaces
+2	231	5.4 Miscellaneous
+2	232	Exercises
+1	235	6. L2-Invariants for General Spaces with Group Action
+2	235	Introduction.
+2	237	6.1 Dimension Theory for Arbitrary Modules
+2	246	6.2 Comparison of Modules and Hilbert Modules
+2	253	6.3 Induction and the Extended von Neumann Dimension
+2	255	6.4 The Extended Dimension Function and Amenable Groups
+3	256	6.4.1 Survey on Amenable Groups
+3	258	6.4.2 Amenability and the Coinvariants of the Group von Neumann Algebra
+3	258	6.4.3 Amenability and Flatness Properties of the Group von Neumann Algebra over the Group Ring
+2	263	6.5 L2-Betti Numbers for General Spaces with Group Actions
+2	276	6.6 L2-Euler Characteristic
+3	277	6.6.1 Definition and Basic Properties of L2-Euler Characteristic
+3	280	6.6.2 L2-Euler Characteristic, Equivariant Euler Characteristic and the Burnside Group
+2	285	6.7 Finitely Presented Torsion Modules and Novikov-Shubin Invariants
+2	287	6.8 Miscellaneous
+2	289	Exercises
+1	293	7. Applications to Groups
+2	293	Introduction.
+2	293	7.1 Groups with Vanishing L2-Betti Numbers
+3	294	7.1.1 General Criterions for the Vanishing of the L2-Betti Numbers of a Group
+3	297	7.1.2 The Vanishing of the L2-Betti Numbers of Thompson's Group
+2	298	7.2 Euler Characteristics of Groups
+2	299	7.3 Deficiency of Groups
+3	299	7.3.1 Survey on Deficiency of Groups
+3	303	7.3.2 Applications of L2-Betti Numbers to Deficiency and to Signatures of 4-Manifolds
+2	304	7.4 Group Automorphisms and L2-Torsion
+3	304	7.4.1 Automorphisms of Groups G with Finite Models for BG
+3	307	7.4.2 Automorphisms of Surfaces
+3	308	7.4.3 A Combinatorial Approach for the L2-Torsion of an Automorphism of a Finitely Generated Free Group
+3	310	7.4.4 Generalizations
+2	311	7.5 Miscellaneous
+2	314	Exercises
+1	317	8. The Algebra of Affiliated Operators
+2	317	Introduction.
+2	318	8.1 The Algebra of Affiliated Operators
+2	323	8.2 Basic Properties of the Algebra of Affiliated Operators
+3	323	8.2.1 Survey on Ore Localization
+3	325	8.2.2 Survey on von Neumann Regular Rings
+3	327	8.2.3 Basic Properties of the Algebra of Affiliated Operators
+2	329	8.3 Dimension Theory and L2-Betti Numbers over the Algebra of Affiliated Operators
+2	331	8.4 Various Notions of Torsion Modules over a Group von Neumann Algebra
+2	333	8.5 Miscellaneous
+2	333	Exercises
+1	335	9. Middle Algebraic K-Theory and L-Theory of von Neumann Algebras
+2	335	Introduction.
+2	336	9.1 Survey on von Neumann Algebras
+3	336	9.1.1 Definition of a von Neumann Algebra
+3	337	9.1.2 Types and the Decomposition of von Neumann Algebras
+3	338	9.1.3 Finite von Neumann Algebras and Traces
+3	340	9.1.4 Extending Results for Group von Neumann Algebras to Finite von Neumann Algebras
+2	341	9.2 Middle K-Theory of a Neumann Algebra
+3	341	9.2.1 K0 of a von Neumann Algebra
+3	343	9.2.2 K1 of a von Neumann Algebra
+2	345	9.3 Middle K-Theory of the Algebra of Affiliated Operators
+2	347	9.4 L-Theory of a von Neumann Algebra and the Algebra of Affiliated Operators
+2	354	9.5 Application to Middle K- and G-Theory of Group Rings
+3	354	9.5.1 Detecting Elements in K1 of a Complex Group Ring
+3	357	9.5.2 Survey on the Isomorphism Conjecture for K0 of Complex Group Rings, the Bass Conjecture and the Hattori-Stallings Rank
+3	363	9.5.3 G-Theory of Complex Group Rings
+2	365	9.6 Miscellaneous
+2	366	Exercises
+1	371	10. The Atiyah Conjecture
+2	371	Introduction.
+2	372	10.1 Survey on the Atiyah Conjecture
+3	372	10.1.1 Various Formulations of the Atiyah Conjecture
+3	378	10.1.2 Relations of the Atiyah Conjecture to Other Conjectures
+3	380	10.1.3 Survey on Positive Results about the Atiyah Conjecture
+3	381	10.1.4 A Counterexample to the Strong Atiyah Conjecture
+2	383	10.2 A Strategy for the Proof of the Atiyah Conjecture
+3	383	10.2.1 The General Case
+3	387	10.2.2 Survey on Universal Localizations and Division and Rational Closure
+3	389	10.2.3 The Strategy for the Proof of Linnell's Theorem
+2	393	10.3 The Proof of Linnell's Theorem
+3	393	10.3.1 The Proof of Atiyah's Conjecture for Free Groups
+3	398	10.3.2 Survey on Crossed Products
+3	401	10.3.3 Property (R) Ascends to Finite Extensions
+3	401	10.3.4 Property (R) Ascends to Extensions by Infinite Cyclic Groups.
+3	404	10.3.5 Property (K) and Extensions by Virtually Finitely Generated Abelian Groups
+3	407	10.3.6 Property (K) holds for Virtually Free Groups
+3	411	10.3.7 The Induction Step for Directed Unions
+2	412	10.4 Miscellaneous
+2	416	Exercises
+1	421	11. The Singer Conjecture
+2	421	Introduction.
+2	422	11.1 Survey on Positive Results about the Singer Conjecture
+3	422	11.1.1 Low-Dimensional Manifolds
+3	424	11.1.2 Pinched Curvature
+3	425	11.1.3 Aspherical Manifolds and Locally Symmetric Spaces
+2	425	11.2 The Singer Conjecture for Kahler Manifolds
+3	428	11.2.1 Hodge Theory on Kahler manifolds
+3	430	11.2.2 The L2-Lefschetz Theorem
+3	433	11.2.3 Novikov-Shubin Invariants for Kahler Hyperbolic Manifolds
+3	435	11.2.4 Non-Vanishing of the Middle L2-Betti Number for Kahler Hyperbolic Manifolds.
+2	436	11.3 Miscellaneous
+2	438	Exercises
+1	441	12. The Zero-in-the-Spectrum Conjecture
+2	441	Introduction.
+2	442	12.1 An Algebraic Formulation of the Zero-in-the-Spectrum Conjecture
+2	444	12.2 Survey on Positive Results about the Zero-in-the-Spectrum Conjecture
+3	444	12.2.1 The Zero-in-the-Spectrum Conjecture for Low-Dimensional Manifolds
+3	445	12.2.2 The Zero-in-the-Spectrum Conjecture for Locally Symmetric Spaces
+3	446	12.2.3 The Zero-in-the-Spectrum Conjecture for Kahler Hyperbolic Manifolds
+3	446	12.2.4 The Zero-in-the-Spectrum Conjecture for HyperEuclidean Manifolds
+3	447	12.2.5 The Zero-in-the-Spectrum Conjecture and the Strong Novikov Conjecture
+3	447	12.2.6 The Zero-in-the-Spectrum Conjecture and Finite Asymptotic Dimension
+2	448	12.3 Counterexamples to the Zero-in-the-Spectrum Conjecture in the Non-Aspherical Case
+2	453	12.4 Miscellaneous
+2	454	Exercises
+1	457	13. The Approximation Conjecture and the Determinant Conjecture
+2	457	Introduction.
+2	458	13.1 Survey on the Approximation Conjecture and Determinant Conjecture
+3	458	13.1.1 Survey on Positive Results about the Approximation Conjecture and the Determinant Conjecture
+3	459	13.1.2 Relations to Other Conjectures.
+3	460	13.1.3 A Class of Groups
+2	463	13.2 The Proof of the Approximation Conjecture and the Determinant Conjecture in Special Cases
+3	464	13.2.1 The General Strategy
+2	479	13.3 Variations of the Approximation Results
+2	486	13.4 Miscellaneous
+2	487	Exercises
+1	489	14. L2-Invariants and the Simplicial Volume
+2	489	Introduction.
+2	489	14.1 Survey on Simplicial Volume
+3	489	14.1.1 Basic Definitions
+3	491	14.1.2 Elementary Properties
+3	493	14.1.3 Bounded Cohomology and Amenable Groups
+3	493	14.1.4 The Simplicial Volume of Hyperbolic and Low-Dimensional Manifolds
+3	495	14.1.5 Volume and Simplicial Volume
+3	498	14.1.6 Simplicial Volume and Betti Numbers
+3	500	14.1.7 Simplicial Volume and S1-Actions
+3	500	14.1.8 Some Information about the Second Bounded Cohomology of Groups
+3	500	14.1.9 Further Properties of the Simplicial Volume
+2	501	14.2 Simplicial Volume and L2-Invariants of Universal Coverings of Closed Manifolds
+3	501	14.2.1 Hyperbolic Manifolds and 3-Manifolds
+3	502	14.2.2 S1-Actions
+3	502	14.2.3 Amenable Fundamental Groups
+3	503	14.2.4 Selfmaps of Degree Different from -1, 0 and 1
+3	505	14.2.5 Negative Sectional Curvature and Locally Symmetric Spaces
+3	505	14.2.6 Simplicial Volume and L2-Invariants
+2	506	14.3 Miscellaneous
+2	508	Exercises
+1	511	15. Survey on Other Topics Related to L2-Invariants
+2	511	Introduction.
+2	511	15.1 L2-Index Theorems
+2	512	15.2 Lp-Cohomology
+2	513	15.3 Intersection Cohomology
+2	513	15.4 Knot Concordance and L2-signature
+1	515	16. Solutions of the Exercises
+1	563	References
+1	587	Notation.
+1	591	Index
