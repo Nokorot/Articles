@@ -1,0 +1,142 @@
+1	-8	Contents
+1	-4	Preface
+1	-3	Introduction
+1	1	I Universal Enveloping Algebras
+2	1	1 Algebraic Constructions
+3	1	1.1 Universal Enveloping Algebras
+3	2	1.2 Lie Algebra Deformations
+3	3	1.3 Symmetrization
+3	3	1.4 The Graded Algebra of U(g)
+2	5	2 The Poincar´e-Birkhoff-Witt Theorem
+3	5	2.1 Almost Commutativity of U(g)
+3	5	2.2 Poisson Bracket on Gr U(g)
+3	7	2.3 The Role of the Jacobi Identity
+3	8	2.4 Actions of Lie Algebras
+3	9	2.5 Proof of the Poincar´e-Birkhoff-Witt Theorem
+1	11	II Poisson Geometry
+2	11	3 Poisson Structures
+3	11	3.1 Lie-Poisson Bracket
+3	12	3.2 Almost Poisson Manifolds
+3	12	3.3 Poisson Manifolds
+3	13	3.4 Structure Functions and Canonical Coordinates
+3	14	3.5 Hamiltonian Vector Fields
+3	15	3.6 Poisson Cohomology
+2	17	4 Normal Forms
+3	17	4.1 Lie’s Normal Form
+3	17	4.2 A Faithful Representation of g
+3	19	4.3 The Splitting Theorem
+3	20	4.4 Special Cases of the Splitting Theorem
+3	20	4.5 Almost Symplectic Structures
+3	21	4.6 Incarnations of the Jacobi Identity
+2	23	5 Local Poisson Geometry
+3	23	5.1 Symplectic Foliation
+3	24	5.2 Transverse Structure
+3	25	5.3 The Linearization Problem
+3	27	5.4 The Cases of su(2) and sl(2; R)
+1	29	III Poisson Category
+2	29	6 Poisson Maps
+3	29	6.1 Characterization of Poisson Maps
+3	31	6.2 Complete Poisson Maps
+3	32	6.3 Symplectic Realizations
+3	34	6.4 Coisotropic Calculus
+3	34	6.5 Poisson Quotients
+3	36	6.6 Poisson Submanifolds
+2	39	7 Hamiltonian Actions
+3	39	7.1 Momentum Maps
+3	40	7.2 First Obstruction for Momentum Maps
+3	41	7.3 Second Obstruction for Momentum Maps
+3	42	7.4 Killing the Second Obstruction
+3	43	7.5 Obstructions Summarized
+3	44	7.6 Flat Connections for Poisson Maps with Symplectic Target
+1	47	IV Dual Pairs
+2	47	8 Operator Algebras
+3	47	8.1 Norm Topology and C∗-Algebras
+3	48	8.2 Strong and Weak Topologies
+3	49	8.3 Commutants
+3	50	8.4 Dual Pairs
+2	51	9 Dual Pairs in Poisson Geometry
+3	51	9.1 Commutants in Poisson Geometry
+3	52	9.2 Pairs of Symplectically Complete Foliations
+3	53	9.3 Symplectic Dual Pairs
+3	54	9.4 Morita Equivalence
+3	55	9.5 Representation Equivalence
+3	56	9.6 Topological Restrictions
+2	59	10 Examples of Symplectic Realizations
+3	59	10.1 Injective Realizations of T3
+3	60	10.2 Submersive Realizations of T3
+3	62	10.3 Complex Coordinates in Symplectic Geometry
+3	63	10.4 The Harmonic Oscillator
+3	65	10.5 A Dual Pair from Complex Geometry
+1	69	V Generalized Functions
+2	69	11 Group Algebras
+3	69	11.1 Hopf Algebras
+3	72	11.2 Commutative and Noncommutative Hopf Algebras
+3	73	11.3 Algebras of Measures on Groups
+3	74	11.4 Convolution of Functions
+3	76	11.5 Distribution Group Algebras
+2	77	12 Densities
+3	77	12.1 Densities
+3	78	12.2 Intrinsic Lp Spaces
+3	79	12.3 Generalized Sections
+3	81	12.4 Poincar´e-Birkhoff-Witt Revisited
+1	85	VI Groupoids
+2	85	13 Groupoids
+3	85	13.1 Definitions and Notation
+3	88	13.2 Subgroupoids and Orbits
+3	89	13.3 Examples of Groupoids
+3	92	13.4 Groupoids with Structure
+3	93	13.5 The Holonomy Groupoid of a Foliation
+2	97	14 Groupoid Algebras
+3	97	14.1 First Examples
+3	98	14.2 Groupoid Algebras via Haar Systems
+3	99	14.3 Intrinsic Groupoid Algebras
+3	101	14.4 Groupoid Actions
+3	103	14.5 Groupoid Algebra Actions
+2	105	15 Extended Groupoid Algebras
+3	105	15.1 Generalized Sections
+3	106	15.2 Bisections
+3	107	15.3 Actions of Bisections on Groupoids
+3	109	15.4 Sections of the Normal Bundle
+3	110	15.5 Left Invariant Vector Fields
+1	113	VII Algebroids
+2	113	16 Lie Algebroids
+3	113	16.1 Definitions
+3	114	16.2 First Examples of Lie Algebroids
+3	116	16.3 Bundles of Lie Algebras
+3	117	16.4 Integrability and Non-Integrability
+3	119	16.5 The Dual of a Lie Algebroid
+3	120	16.6 Complex Lie Algebroids
+2	123	17 Examples of Lie Algebroids
+3	123	17.1 Atiyah Algebras
+3	124	17.2 Connections on Transitive Lie Algebroids
+3	125	17.3 The Lie Algebroid of a Poisson Manifold
+3	127	17.4 Vector Fields Tangent to a Hypersurface
+3	128	17.5 Vector Fields Tangent to the Boundary
+2	131	18 Differential Geometry for Lie Algebroids
+3	131	18.1 The Exterior Differential Algebra of a Lie Algebroid
+3	132	18.2 The Gerstenhaber Algebra of a Lie Algebroid
+3	134	18.3 Poisson Structures on Lie Algebroids
+3	136	18.4 Poisson Cohomology on Lie Algebroids
+3	137	18.5 Infinitesimal Deformations of Poisson Structures
+3	138	18.6 Obstructions to Formal Deformations
+1	141	VIII Deformations of Algebras of Functions
+2	141	19 Algebraic Deformation Theory
+3	141	19.1 The Gerstenhaber Bracket
+3	142	19.2 Hochschild Cohomology
+3	144	19.3 Case of Functions on a Manifold
+3	144	19.4 Deformations of Associative Products
+3	146	19.5 Deformations of the Product of Functions
+2	149	20 Weyl Algebras
+3	149	20.1 The Moyal-Weyl Product
+3	151	20.2 The Moyal-Weyl Product as an Operator Product
+3	152	20.3 Affine Invariance of the Weyl Product
+3	152	20.4 Derivations of Formal Weyl Algebras
+3	153	20.5 Weyl Algebra Bundles
+2	155	21 Deformation Quantization
+3	155	21.1 Fedosov’s Connection
+3	156	21.2 Preparing the Connection
+3	158	21.3 A Derivation and Filtration of the Weyl Algebra
+3	160	21.4 Flattening the Connection
+3	161	21.5 Classification of Deformation Quantizations
+1	163	References
+1	175	Index

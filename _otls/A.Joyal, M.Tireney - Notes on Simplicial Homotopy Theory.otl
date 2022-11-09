@@ -1,0 +1,35 @@
+1	-1	Contents
+1	1	Introduction
+1	3	1 Simplicial sets
+2	3	1.1 Definitions and examples
+2	5	1.2 The skeleton of a simplicial set
+2	9	1.3 Geometric realization and the fundamental category
+2	14	1.4 The nerve of a partially ordered set
+1	17	2 Quillen homotopy structures
+2	17	2.1 Homotopy structures
+2	20	2.2 The Quillen structure on groupoids
+2	24	2.3 Cofibration and fibration structures
+2	30	2.4 The fundamental groupoid and the Van Kampen theorem
+2	32	2.5 Coverings
+1	37	3 The homotopy theory of simplicial sets
+2	37	3.1 Anodyne extensions and fibrations
+2	44	3.2 Homotopy
+2	55	3.3 Minimal complexes
+2	59	3.4 The Quillen homotopy structure
+1	65	4 Homotopy groups and Milnor’s Theorem
+2	65	4.1 Pointed simplicial sets
+2	69	4.2 Homotopy groups
+2	72	4.3 A particular weak equivalence
+2	75	4.4 The long exact sequence and Whitehead’s Theorem
+2	77	4.5 Milnor’s Theorem
+2	79	4.6 Some remarks on weak equivalences
+2	81	4.7 The Quillen model structure on Topc
+1	85	A Quillen Model Structures
+2	85	A.1 Preliminaries
+2	87	A.2 Weak factorisation systems
+2	90	A.3 Quillen model structures
+2	92	A.4 Examples
+2	95	A.5 The homotopy category
+2	102	A.6 Quillen functors and equivalences
+2	108	A.7 Monodial model categories
+1	115	References
