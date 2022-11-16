@@ -1,0 +1,52 @@
+1	-3	Preface
+1	1	1 Introduction
+2	1	1.1 Motivation
+2	5	1.2 Example of a vertex operator
+2	8	1.3 The notion of vertex operator algebra
+2	12	1.4 Simplification of the definition
+2	13	1.5 Representations and modules
+2	15	1.6 Construction of families of examples
+2	17	1.7 Some further developments
+1	21	2 Formal Calculus
+2	21	2.1 Formal series and the formal delta function
+2	29	2.2 Derivations and the formal TaylorTheorem
+2	33	2.3 Expansions of zero and applications
+1	49	3 Vertex Operator Algebras: The Axiomatic Basics
+2	49	3.1 Definitions and some fundamental properties
+2	65	3.2 Commutativity properties
+2	72	3.3 Associativity properties
+2	81	3.4 The Jacobi identity from commutativity and associativity
+2	84	3.5 The Jacobi identity from commutativity
+2	86	3.6 The Jacobi identity from skew symmetry and associativity
+2	92	3.7 S_3-symmetry of the Jacobi identity
+2	94	3.8 The iterate formula and normal-ordered products
+2	98	3.9 Further elementary notions
+2	101	3.10 Weak nilpotence and nilpotence
+2	105	3.11 Centralizers and the center
+2	111	3.12 Direct product and tensor product vertex algebras
+1	117	4 Modules
+2	118	4.1 Definition and some consequences
+2	121	4.2 Commutativity properties
+2	124	4.3 Associativity properties
+2	127	4.4 The Jacobi identity as a consequence of associativity and commutativity properties
+2	128	4.5 Further elementary notions
+2	137	4.6 Tensor product modules for tensor product vertex algebras
+2	138	4.7 Vacuum-like vectors
+2	141	4.8 Adjoining a module to a vertex algebra
+1	145	5 Representations of Vertex Algebras and the Construction of Vertex Algebras and Modules
+2	148	5.1 Weak vertex operators
+2	151	5.2 The action of weak vertex operators on the space of weak vertex operators
+2	156	5.3 The canonical weak vertex algebra £(W) and the equivalence between modules and representations
+2	163	5.4 Subalgebras of £(W)
+2	165	5.5 Local subalgebras and vertex subalgebras of £(W)
+2	173	5.6 Vertex subalgebras of £(W) associated with the Virasoro algebra
+2	179	5.7 General construction theorems for vertex algebras and modules
+1	191	6 Construction of Families of Vertex Operator Algebras and Modules
+2	193	6.1 Vertex operator algebras and modules associated to the Virasoro algebra
+2	201	6.2 Vertex operator algebras and modules associated to affine Lie algebras
+2	217	6.3 Vertex operator algebras and modules associated to Heisenberg algebras
+2	226	6.4 Vertex operator algebras and modules associated to even lattices-the setting
+2	239	6.5 Vertex operator algebras and modules associated to even lattices-the main results
+2	264	6.6 Classification of the irreducible Lg(l, O)-modulesfor 9 finite-dimensional simple and l a positive integer
+1	289	References
+1	315	Index

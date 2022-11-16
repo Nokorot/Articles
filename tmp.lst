@@ -1,0 +1,48 @@
+#!/bin/sh
+tail -n +8 tmp.lst \
+    | shuf | sed 1q  \
+    | sed 's,^,https://github.com/Nokorot/Articles/raw/master/,' \
+    | xargs $BROWSER
+exit 0
+# LIST:
+A.Cannas%20-%20Geometric%20Models%20for%20Noncommutative%20Algebras.pdf
+A.Hatcher%20-%20Algebraic%20Topology.pdf
+A.Joyal,%20M.Tireney%20-%20Notes%20on%20Simplicial%20Homotopy%20Theory.pdf
+B.Blackadar%20-%20Operator%20Algebras%20(2006).pdf
+B.Gray%20-%20Homotopy%20Theory%20(1975).pdf
+C.Barwick,%20P.Haine%20-%20Pyknotic%20objects.pdf
+C.Barwick,%20S.Glasman,%20P.Haine%20-%20Exodromy.pdf
+C.Viterbo%20-%20An%20Intro.%20to%20Simplectic%20Top.%20through%20Sheaf%20theory.pdf
+D.Cisinski%20-%20Higer%20Categories%20and%20Homotopibal%20Algebra.pdf
+D.Poole%20-%20Linear%20Algebra%20A%20Modern%20Introduction.pdf
+D.Rogalski%20-%20An%20introduction%20to%20noncommutative%20projective%20algebraic%20geometry%20(2014).pdf
+E.Luk,%20I.Nicholson%20-%20On%20the%20Geometry%20of%20Singular%20(2020).pdf
+E.Riehl%20-%20Category%20Theory%20in%20Context.pdf
+H.Kammeyer%20-%20Introduction%20to%20L2%20Invariants.pdf
+I.Parissis%20-%20Harmonic%20Analysis%20(2021).pdf
+J.Duponet%20-%20Fibre%20bundles%20and%20Chern-Weil%20theory%20(2003).pdf
+J.F.Adams%20-%20Infinite%20Loop%20Spaces%20(1978).pdf
+J.F.Adams%20-%20Stable%20Homotopy%20Theory%20and%20Generalised%20Homology%20(1974).pdf
+J.Jost%20-%20Riemannian%20Geometry%20and%20Geometric%20Analysis.pdf
+J.Lurie%20-%20Higher%20Algebra%20(2017).pdf
+J.Lurie%20-%20Higher%20Topos%20Theory%20(2009).pdf
+J.Lurie%20-%20Higher%20Topos%20Theory.pdf
+J.Milnor,%20J.D.Stasheff%20-%20Characteristic%20Classes-Princeton%20University%20Press%20(1974).pdf
+J.Storm%20-%20Modern%20Classical%20Homotopy%20Theory.pdf
+K.DeLaet%20-%20On%20the%20center%20of%203-dim.%20and%204-dim.%20Sklyanin%20algebras%20(2000).pdf
+K.Erdmann,%20T.Holm%20-%20Algebras%20and%20Representation%20Theory%20(2018).epub
+K.Erdmann,%20T.Holm%20-%20Algebras%20and%20Representation%20Theory%20(2018).pdf
+KAU%20-%20Introduction%20to%20the%20representation%20theory%20of%20quivers%20(2012).pdf
+L.G.Maxim%20-%20Intersection%20Homology%20&%20Preverse%20Sheavs.epub
+L.G.Maxim%20-%20Intersetion%20Homology%20&%20Perverse%20Sheavs%20(2019).pdf
+L.Nicolaescu%20-%20Lectures%20on%20the%20geometry%20of%20manifolds%20(2007).pdf
+N.P.Strickland%20-%20The%20Category%20of%20CGWH%20Spaces%20(2009).pdf
+P.B.Gilkey%20-%20Invariance%20Theory,%20Heat%20Eq%20and%20AS%20Index%20Theorem.pdf
+P.G.Goerss,%20J.F.Jardine%20-%20Simplicial%20Homotopy%20Theory%20(1999).pdf
+R.Bott,%20L.W.%20Tu%20-%20Differential%20Forms%20in%20Algebraic%20Topology-Springer-Verlag%20New%20York%20(1982).pdf
+S.Kobayashi,%20K.Nomizu%20-%20Foundations%20of%20differential%20geometry.%20Volume%202-Interscience%20(1969).djvu
+S.P.Smith%20-%20degenerate%203-dim.%20Sklyanin%20algebras%20are%20Monomial%20Algebras%20(2011).pdf
+S.Schwede%20-%20Global%20homotopy%20theory.pdf
+T.Leinster%20-%20Basic%20Category%20Theory%20(2016).pdf
+W.Luck%20-%20A%20Basic%20Introduction%20to%20Surgery%20Theory.pdf
+W.Luck%20-%20L2-Invariants%20Theory%20and%20Applications%20to%20Geometry%20and%20K-theory%20(2002).pdf
