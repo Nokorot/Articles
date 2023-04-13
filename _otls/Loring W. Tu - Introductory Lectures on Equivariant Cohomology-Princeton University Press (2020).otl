@@ -1,0 +1,199 @@
+1	6	Dedication
+1	8	Contents
+1	16	List of Figures
+2	29	1.1 Rotating a sphere about the z-axis.
+2	30	1.2 The graph of a continuous self-map.
+2	35	2.1 An element of the fundamental group.
+2	38	2.2 Attaching a cell.
+2	45	3.1 A submersion that is not a fiber bundle.
+2	52	4.1 The orbit space of R under translations by Z.
+2	53	4.2 The orbit space of the 2-sphere under rotations about the z-axis.
+2	65	5.1 The join A ∗ B of A and B in R3.
+2	65	5.2 A construction of the join of A and B.
+2	69	6.1 The Er-term of a spectral sequence with some differentials.
+2	70	6.2 The vanishing of dr for r > p and r > q + 1.
+2	71	6.3 Filtration by p and filtration by q.
+2	72	6.4 Successive quotients in Hn(E).
+2	78	6.5 The E∞ term of the spectral sequence of S5 → CP 2 in degree 5.
+2	104	10.1 The integral curve of a vector field X through p.
+2	110	11.1 The fundamental vector field associated to A in the Lie algebra of a circle.
+2	115	11.2 Vertical vectors at p of a principal bundle π: P → M.
+2	221	24.1 A noncompact surface M/S1 = T∞ of infinite genus.
+2	224	24.2 An open cover of M − S.
+2	231	25.1 Unit normal vector field on S2.
+2	232	25.2 A tubular neighborhood of S.
+2	237	26.1 Zero section of a vector bundle.
+2	239	26.2 Rotation about the z-axis.
+2	248	27.1 By reflecting about the y-axis, a counterclockwise rotation is equivalent to a clockwise rotation through the same angle.
+1	18	Preface
+1	20	Acknowledgments
+1	24	I Equivariant Cohomology in the Continuous Category
+2	28	1 Overview
+3	28	1.1 Actions of a group
+3	29	1.2 Orbits, stabilizers, and fixed point sets
+3	30	1.3 Homogeneous spaces
+3	31	1.4 Equivariant cohomology
+2	34	2 Homotopy Groups and CW Complexes
+3	34	2.1 Homotopy groups
+3	36	2.2 Fiber bundles
+3	37	2.3 Homotopy exact sequence of a fiber bundle
+3	38	2.4 Attaching cells
+3	39	2.5 CW complexes
+3	40	2.6 Manifolds and CW complexes
+3	41	2.7 The infinite sphere
+2	44	3 Principal Bundles
+3	44	3.1 Principal bundles
+3	47	3.2 The pullback of a fiber bundle
+2	52	4 Homotopy Quotients and Equivariant Cohomology
+3	52	4.1 A first candidate for equivariant
+3	53	4.2 Homotopy quotients
+3	58	4.4 Equivariant cohomology is well-defined
+3	59	4.5 Algebraic structure of equivariant
+2	62	5 Universal Bundles and Classifying Spaces
+3	62	5.1 Universal bundles
+3	64	5.2 Uniqueness of a CW classifying space
+3	64	5.3 Milnor's construction
+3	66	5.4 Equivariant cohomology of a point
+2	68	6 Spectral Sequences
+2	80	7 Equivariant Cohomology of S2 Under Rotation
+3	80	7.1 Homotopy quotient as a fiber bundle
+3	80	7.2 Equivariant cohomology of s 2 under
+2	84	8 A Universal Bundle for a Compact Lie Group
+3	84	8.1 The stiefel variety
+3	85	8.2 A principal O(k)-bundle
+3	86	8.3 Homotopy groups of a stiefel variety
+3	87	8.4 Closed subgroups of a Lie group
+3	88	8.5 Universal bundle for a compact Lie group
+3	88	8.6 Universal bundle for a direct product
+2	92	9 General Properties of Equivariant Cohomology
+3	92	9.1 Functorial properties
+3	95	9.2 Free actions
+3	96	9.3 Coefficient ring of equivariant cohomology
+3	97	9.4 Equivariant cohomology of a disjoint union
+1	100	II Differential Geometry of a Principal Bundle
+2	104	10 The Lie Derivative and Interior Multiplication
+3	104	10.1 The Lie derivative of a vector field
+3	105	10.2 The Lie derivative of a differential form
+3	107	10.3 Interior multiplication
+2	110	11 Fundamental Vector Fields
+3	110	11.1 Fundamental vector fields
+3	113	11.2 Zeros of a fundamental vector field
+3	115	11.3 Vertical vectors on a principal bundle
+3	116	11.4 Translate of a fundamental vector field
+3	117	11.5 The Lie bracket of fundamental vector
+2	120	12 Basic Forms
+3	120	12.1 Basic forms on R2
+3	121	12.2 Invariant forms
+3	122	12.3 Horizontal forms
+3	123	12.4 Basic forms
+2	126	13 Integration on a Compact Connected Lie Group
+3	126	13.1 Bi-invariant forms on a compact connected Lie group
+3	128	13.2 Integration over a compact connected Lie
+3	129	13.3 Invariance of the integral
+3	132	13.4 The pullback of an integral
+3	133	13.5 Differentiation under the integral sign
+3	136	13.6 Cohomology does not commute with
+2	138	14 Vector-Valued Forms
+3	138	14.1 Vector-valued forms
+3	139	14.2 Lie algebra valued forms
+3	141	14.3 Matrix-valued forms
+2	144	15 The Maurer–Cartan Form
+3	144	15.1 The Lie algebra g of a Lie group and its dual
+3	146	15.2 Maurer–Cartan equation with respect to a basis
+3	147	15.3 The maurer–Cartan form
+2	150	16 Connections on a Principal Bundle
+3	150	16.1 Maps of vector bundles
+3	151	16.2 Vertical and horizontal subbundles
+3	152	16.3 Connections on a principal bundle
+3	154	16.4 The Maurer–Cartan form is a connection
+3	155	16.5 Existence of a connection on a principal
+2	158	17 Curvature on a Principal Bundle
+3	158	17.1 Curvature
+3	159	17.2 Properties of curvature
+1	164	III The Cartan Model
+2	168	18 Differential Graded Algebras
+3	168	18.1 Differential graded algebras
+3	170	18.2 Tensor product of differential graded
+3	171	18.3 The basic subcomplex of a g-differential
+2	174	19 The Weil Algebra and the Weil Model
+3	174	19.1 The Weil algebra and the Weil map
+3	175	19.2 The Weil map relative to a basis
+3	176	19.3 The Weil algebra as a g-dga
+3	179	19.4 The cohomology of the Weil algebra
+3	181	19.5 An algebraic model for the universal
+3	182	19.6 An algebraic model for the homotopy
+3	182	19.7 Functoriality of the Weil model
+2	184	20 Circle Actions
+3	184	20.1 The Weil algebra for a circle action
+3	184	20.2 The Weil model for a circle action
+3	186	20.3 The Cartan model for a circle action
+3	187	20.4 The Cartan differential for a circle action
+2	190	21 The Cartan Model in General
+3	190	21.1 The Weil–Cartan isomorphism
+3	194	21.2 The Cartan differential
+3	195	21.3 Intrinsic description of the Cartan
+3	197	21.4 Pullback of equivariant forms
+3	198	21.5 The equivariant de rham theorem
+3	198	21.6 Equivariant forms for a torus action
+3	199	21.7 Example: the action of a torus on a point
+3	200	21.8 Equivariantly closed extensions
+2	204	22 Outline of a Proof of the Equivariant de Rham Theorem
+3	204	22.1 The cohomology of the base
+3	206	22.2 Equivariant de rham theorem for a free
+3	206	22.3 Equivariant de rham theorem in general
+3	207	22.4 Cohomology of a classifying space
+1	210	IV Borel Localization
+2	212	23 Localization in Algebra
+3	212	23.1 Localization with respect to a variable
+3	215	23.2 Localization and torsion
+3	215	23.3 Antiderivations under localization
+3	216	23.4 Localization and exactness
+2	220	24 Free and Locally Free Actions
+3	220	24.1 Equivariant cohomology of a free action
+3	221	24.2 Locally free actions
+3	225	24.3 Equivariant cohomology of a locally free
+2	228	25 The Topology of a Group Action
+3	228	25.1 Smooth actions of a compact Lie group
+3	229	25.2 Equivariant vector bundles
+3	230	25.3 The normal bundle of a submanifold
+3	232	25.4 Equivariant tubular neighborhoods
+3	234	25.5 Equivariant Mayer–Vietoris sequence
+2	236	26 Borel Localization for a Circle Action
+3	236	26.1 Borel localization
+3	239	26.2 Example: the ring structure of H*S1(S2)
+1	244	V The Equivariant Localization Formula
+2	246	27 A Crash Course in Representation Theory
+3	246	27.1 Representations of a group
+3	248	27.2 Local data at a fixed point
+2	252	28 Integration of Equivariant Forms
+3	252	28.1 Manifolds with boundary
+3	253	28.2 Integration of equivariant forms
+3	254	28.3 Stokes’s theorem for equivariant integration
+3	255	28.4 Integration of equivariant forms for a circle action
+2	256	29 Rationale for a Localization Formula
+3	256	29.1 Circle actions with finitely many fixed points
+3	258	29.2 The spherical blow-up
+2	262	30 Localization Formulas
+3	262	30.1 Equivariant localization formula for a circle action
+3	264	30.2 Application: the area of a sphere
+3	265	30.3 Equivariant characteristic classes
+3	266	30.4 Localization formula for a torus action
+2	268	31 Proof of the Localization Formula for a Circle Action
+3	268	31.1 On the spherical blow-up
+3	272	31.2 Surface area of a sphere
+2	276	32 Some Applications
+3	276	32.1 Integration of invariant forms
+3	276	32.2 Rational cohomology of a homogeneous
+3	277	32.3 Topological invariants of a homogeneous
+3	278	32.4 Symplectic geometry and classical
+3	279	32.5 Stationary phase approximation
+3	279	32.6 Exponents at fixed points
+3	280	32.7 Gysin maps
+1	282	Appendices
+2	284	A. Proof of the Equivariant de Rham Theorem • Loring W. Tu and Alberto Arabia
+2	302	B. A Comparison Theorem for Spectral Sequences • Alberto Arabia
+2	306	C. Commutativity of Cohomology with Invariants • Alberto Arabia
+1	312	Hints and Solutions to Selected End-of-Section Problems
+1	320	List of Notations
+1	326	Bibliography
+1	332	Index
