@@ -1,0 +1,147 @@
+1	-9	Series Preface
+1	-8	Preface to the Third Edition
+1	-7	Preface to the Second Edition
+1	-6	Preface to the First Edition
+1	1	0 Basic Concepts
+2	1	0.1 Weak Formulation of Boundary Value Problems
+2	3	0.2 Ritz-Galerkin Approximation
+2	4	0.3 Error Estimates
+2	7	0.4 Piecewise Polynomial Spaces – The Finite Element Method
+2	9	0.5 Relationship to Difference Methods
+2	10	0.6 Computer Implementation of Finite Element Methods
+2	12	0.7 Local Estimates
+2	13	0.8 Adaptive Approximation
+2	15	0.9 Weighted Norm Estimates
+2	19	0.x Exercises
+1	23	1 Sobolev Spaces
+2	23	1.1 Review of Lebesgue Integration Theory
+2	26	1.2 Generalized (Weak) Derivatives
+2	29	1.3 Sobolev Norms and Associated Spaces
+2	32	1.4 Inclusion Relations and Sobolev’s Inequality
+2	35	1.5 Review of Chapter 0
+2	36	1.6 Trace Theorems
+2	40	1.7 Negative Norms and Duality
+2	42	1.x Exercises
+1	48	2 Variational Formulation of Elliptic Boundary Value Problems
+2	48	2.1 Inner-Product Spaces
+2	50	2.2 Hilbert Spaces
+2	51	2.3 Projections onto Subspaces
+2	54	2.4 Riesz Representation Theorem
+2	55	2.5 Formulation of Symmetric Variational Problems
+2	58	2.6 Formulation of Nonsymmetric Variational Problems
+2	59	2.7 The Lax-Milgram Theorem
+2	63	2.8 Estimates for General Finite Element Approximation
+2	64	2.9 Higher-dimensional Examples
+2	65	2.x Exercises
+1	67	3 The Construction of a Finite Element Space
+2	67	3.1 The Finite Element
+2	69	3.2 Triangular Finite Elements
+3	69	The Lagrange Element
+3	72	The Hermite Element
+3	73	The Argyris Element
+2	74	3.3 The Interpolant
+2	78	3.4 Equivalence of Elements
+2	82	3.5 Rectangular Elements
+3	82	Tensor Product Elements
+3	83	The Serendipity Element
+2	84	3.6 Higher–dimensional Elements
+2	86	3.7 Exotic Elements
+2	87	3.x Exercises
+1	91	4 Polynomial Approximation Theory in Sobolev Spaces
+2	91	4.1 Averaged Taylor Polynomials
+2	94	4.2 Error Representation
+2	98	4.3 Bounds for Riesz Potentials
+2	103	4.4 Bounds for the Interpolation Error
+2	108	4.5 Inverse Estimates
+2	111	4.6 Tensor-product Polynomial Approximation
+2	116	4.7 Isoparametric Polynomial Approximation
+2	117	4.8 Interpolation of Non-smooth Functions
+2	121	4.9 A Discrete Sobolev Inequality
+2	123	4.x Exercises
+1	126	5 n-Dimensional Variational Problems
+2	126	5.1 Variational Formulation of Poisson’s Equation
+2	129	5.2 Variational Formulation of the Pure Neumann Problem
+2	131	5.3 Coercivity of the Variational Problem
+2	133	5.4 Variational Approximation of Poisson’s Equation
+2	135	5.5 Elliptic Regularity Estimates
+2	138	5.6 General Second-Order Elliptic Operators
+2	141	5.7 Variational Approximation of General Elliptic Problems
+2	143	5.8 Negative-Norm Estimates
+2	145	5.9 The Plate-Bending Biharmonic Problem
+2	148	5.x Exercises
+1	152	6 Finite Element Multigrid Methods
+2	152	6.1 A Model Problem
+2	154	6.2 Mesh-Dependent Norms
+2	156	6.3 The Multigrid Algorithm
+2	158	6.4 Approximation Property
+2	159	6.5 W-cycle Convergence for the kth Level Iteration
+2	162	6.6 V-cycle Convergence for the kth Level Iteration
+2	167	6.7 Full Multigrid Convergence Analysis and Work Estimates
+2	169	6.x Exercises
+1	171	7 Additive Schwarz Preconditioners
+2	171	7.1 Abstract Additive Schwarz Framework
+2	175	7.2 The Hierarchical Basis Preconditioner
+2	179	7.3 The BPX Preconditioner
+2	181	7.4 The Two-level Additive Schwarz Preconditioner
+2	187	7.5 Nonoverlapping Domain Decomposition Methods
+2	193	7.6 The BPS Preconditioner
+2	197	7.7 The Neumann-Neumann Preconditioner
+2	201	7.8 The BDDC Preconditioner
+2	206	7.x Exercises
+1	211	8 Max–norm Estimates
+2	211	8.1 Main Theorem
+2	214	8.2 Reduction to Weighted Estimates
+2	216	8.3 Proof of Lemma 8.2.6
+2	220	8.4 Proofs of Lemmas 8.3.7 and 8.3.11
+2	225	8.5 Lp Estimates (Regular Coefficients)
+2	227	8.6 Lp Estimates (Irregular Coefficients)
+2	231	8.7 A Nonlinear Example
+2	234	8.x Exercises
+1	237	9 Adaptive Meshes
+2	238	9.1 A priori Estimates
+2	240	9.2 Error Estimators
+2	243	9.3 Local Error Estimates
+2	245	9.4 Estimators for Linear Forms and Other Norms
+2	249	9.5 A Convergent Adaptive Algorithm
+2	257	9.6 Conditioning of Finite Element Equations
+2	260	9.7 Bounds on the Condition Number
+2	262	9.8 Applications to the Conjugate-Gradient Method
+2	263	9.x Exercises
+1	266	10 Variational Crimes
+2	267	10.1 Departure from the Framework
+2	269	10.2 Finite Elements with Interpolated Boundary Conditions
+2	276	10.3 Nonconforming Finite Elements
+2	281	10.4 Isoparametric Finite Elements
+2	284	10.5 Discontinuous Finite Elements
+2	291	10.6 Poincare´-Friedrichs Inequalitites for Piecewise W_p^1 Functions
+2	298	10.x Exercises
+1	305	11 Applications to Planar Elasticity
+2	305	11.1 The Boundary Value Problems
+2	307	11.2 Weak Formulation and Korn’s Inequality
+2	314	11.3 Finite Element Approximation and Locking
+2	317	11.4 A Robust Method for the Pure Displacement Problem
+2	321	11.x Exercises
+1	324	12 Mixed Methods
+2	324	12.1 Examples of Mixed Variational Formulations
+2	326	12.2 Abstract Mixed Formulation
+2	329	12.3 Discrete Mixed Formulation
+2	331	12.4 Convergence Results for Velocity Approximation
+2	334	12.5 The Discrete Inf-Sup Condition
+2	340	12.6 Verification of the Inf-Sup Condition
+2	346	12.x Exercises
+1	348	13 Iterative Techniques for Mixed Methods
+2	348	13.1 Iterated Penalty Method
+2	352	13.2 Stopping Criteria
+2	354	13.3 Augmented Lagrangian Method
+2	357	13.4 Application to the Navier-Stokes Equations
+2	360	13.5 Computational Examples
+2	363	13.x Exercises
+1	364	14 Applications of Operator-Interpolation Theory
+2	365	14.1 The Real Method of Interpolation
+2	367	14.2 Real Interpolation of Sobolev Spaces
+2	370	14.3 Finite Element Convergence Estimates
+2	373	14.4 The Simultaneous Approximation Theorem
+2	373	14.5 Precise Characterizations of Regularity
+2	374	14.x Exercises
+1	375	References
+1	384	Index
